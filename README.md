@@ -2,7 +2,8 @@
 ## Texas Convergent E-Commerce Build Team
 ### **Members**
 ### Tech
-- TODO
+- Create React App
+- Look into the pages we need
 ### Product
 - TODO
 ### Design
