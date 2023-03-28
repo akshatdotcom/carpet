@@ -1,9 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Login } from './Login.js';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import SplashScreen from './Components/SplashScreen';
+
 export default function App() {
   return (
-    <Login/>
+    <SafeAreaProvider>
+      <SplashScreen></SplashScreen>
+    </SafeAreaProvider>
   );
 }
 
