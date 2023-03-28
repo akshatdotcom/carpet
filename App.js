@@ -3,12 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import SplashScreen from './Components/SplashScreen';
+import AccountInfo from './Components/AccountInfo';
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <SplashScreen></SplashScreen>
-    </SafeAreaProvider>
+    
+      <AccountInfo></AccountInfo>
+    
   );
 }
 
