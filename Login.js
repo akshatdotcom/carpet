@@ -4,7 +4,7 @@ export function Login() {
  return (
     <View style={styles.container}>
       <Text>Login Page </Text>
-      <StatusBar style="auto" />
+       <StatusBar style="auto" />
     </View>
   );
 }

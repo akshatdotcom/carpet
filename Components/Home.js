@@ -23,7 +23,7 @@ export default function Home() {
                  the campus marketplace!
             </Text>
 
-            <Text style = {styles.subText2}> Let's get started</Text>
+            <Text style = {styles.subText2}> Let's get started ></Text>
 
             <StatusBar style="auto" />
         </View>

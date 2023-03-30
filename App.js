@@ -5,10 +5,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import SplashScreen from './Components/SplashScreen';
 import AccountInfo from './Components/AccountInfo';
 
+
 export default function App() {
   return (
     
-      <AccountInfo></AccountInfo>
+      <SafeAreaProvider>
+      <SplashScreen></SplashScreen>
+      </SafeAreaProvider>
     
   );
 }
