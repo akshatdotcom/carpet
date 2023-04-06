@@ -3,10 +3,10 @@ import { Animated, Dimensions, Image, Text, View } from "react-native";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 // Logo....
-import Logo from '../assets/CARPETLOGO.png';
+import Logo from '../assets/OfficialCarpetLogo.png';
 import Home from './Home';
 
-const BGColor = "#4D4A95"
+const BGColor = "#52796F"
 
 export default function SplashScreen() {
 
