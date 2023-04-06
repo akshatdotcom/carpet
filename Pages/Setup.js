@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 
-export function Setup() {
+export default function Setup() {
     const titleText = "Welcome to Carpet!"
     const sloganText = "The Campus Marketplace"
     const promptText = "Join as a Client or Service Provider"
