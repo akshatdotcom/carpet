@@ -1,13 +1,13 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
+import {StyleSheet, ScrollView, Text, Image, Button, TouchableOpacity} from 'react-native';
 
 export default function Preferences() {
     return (
-        <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.container}>
             <Text style={styles.firstText}>
                 What services are you looking at?
             </Text>
-        </View>
+        </ScrollView>
     );
 };
 

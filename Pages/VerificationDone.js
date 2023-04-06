@@ -7,7 +7,7 @@ const AppButton = ({ onPress, title }) => (
   </TouchableOpacity>
 );
 
-export const VerificationDone = () => {
+export default function VerificationDone() {
     return (
       <View style={styles.container}>
         <Text style={styles.firstText}>
