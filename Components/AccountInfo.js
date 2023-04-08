@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import { StyleSheet, Text, TextInput} from 'react-native';
 import { Animated, Dimensions, Image, ScrollView, View, TouchableOpacity, Button } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import CreateAccountButton from '../Components/CreateAccountButton';
 
 const BGColor = "#74AB9D"
 
@@ -62,12 +63,7 @@ export default function Home() {
             />
 
 </View>
-
-            <TouchableOpacity style = {styles.button}>
-                <Text style = {styles.buttonText}>
-                    Create my Account
-                </Text>
-            </TouchableOpacity>
+            <CreateAccountButton></CreateAccountButton>
         </View>
         
     );

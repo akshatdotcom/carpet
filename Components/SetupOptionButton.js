@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 
-export function SetupOption(props) {
+function SetupOptionButton(props) {
     return (
             <TouchableOpacity style={styles.optionContainer}>
                 <View style={styles.insideContainer}>
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     insideContainer: {
         flex: 1,
         marginVertical: 10,
-        backgroundColor: '##BBB9B9',
+        backgroundColor: '#f5f5f5',
         borderRadius: 10,
         position: 'relative',
         display: 'flex',
@@ -48,4 +48,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default SetupOption;
+export default SetupOptionButton;

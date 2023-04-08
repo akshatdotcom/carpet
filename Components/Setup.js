@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 
-import SetupOption from '../Components/SetupOption'
+import SetupOptionButton from './SetupOptionButton'
+import CreateAccountButton from './CreateAccountButton'
 
 export default function Setup() {
     const titleText = "Welcome to Carpet!"
@@ -25,11 +26,11 @@ export default function Setup() {
             </View>
             <View style={containerStyles.bigContainer}>
                 <Text style={textStyles.prompt}>{ promptText }</Text>
-                <SetupOption text={ clientOptionText } icon={ giveImage }></SetupOption>
-                <SetupOption text={ freelancerOptionText } icon={ searchIconImage }></SetupOption>
+                <SetupOptionButton text={ clientOptionText } icon={ giveImage }></SetupOptionButton>
+                <SetupOptionButton text={ freelancerOptionText } icon={ searchIconImage }></SetupOptionButton>
             </View>
             <View style={containerStyles.smallContainer}>
-                <Text style={textStyles.title}>Button goes here</Text>
+                <CreateAccountButton></CreateAccountButton>
                 <Text style={textStyles.slogan}>{ existingAccountText + SPACE + loginButtonText }</Text>
             </View>
         </View>
@@ -55,24 +56,7 @@ const containerStyles = StyleSheet.create({
     },
     smallContainer: {
         position: 'relative',
-        borderWidth: 3,
         flex: 1.25
-    },
-    optionContainer: {
-        position: 'relative',
-        marginHorizontal: 40,
-        marginVertical: 5,
-        flex: 1,
-        display: 'flex'
-    },
-    insideContainer: {
-        flex: 1,
-        marginVertical: 10,
-        backgroundColor: '#D9D9D9',
-        borderRadius: 10,
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'flex-end'
     }
 })
 
@@ -97,23 +81,5 @@ const textStyles = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold',
         textAlign: 'center'
-    },
-    option: {
-        position: 'relative',
-        paddingTop: 50,
-        textAlign: 'right',
-        paddingVertical: 15,
-        paddingLeft: 40,
-        paddingRight: 20,
-        fontSize: 17,
-        fontWeight: 400
-    },
-    image: {
-        position: 'absolute',
-        width: 50,
-        height: 50,
-        resizeMode: 'cover',
-        top: -5,
-        left: 8
     }
 })
