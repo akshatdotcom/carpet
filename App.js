@@ -3,6 +3,7 @@ import React from 'react';
 // import {StatusBar} from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import SplashScreen from './Components/SplashScreen';
 import Login from './Components/Login';
 import Setup from './Components/Setup';
