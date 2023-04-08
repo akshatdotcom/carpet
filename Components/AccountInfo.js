@@ -4,7 +4,7 @@ import { StyleSheet, Text, TextInput} from 'react-native';
 import { Animated, Dimensions, Image, ScrollView, View, TouchableOpacity, Button } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-const BGColor = "#F5F5F5"
+const BGColor = "#74AB9D"
 
 export default function Home() {
 
@@ -65,7 +65,7 @@ export default function Home() {
 
             <TouchableOpacity style = {styles.button}>
                 <Text style = {styles.buttonText}>
-                    Button
+                    Create my Account
                 </Text>
             </TouchableOpacity>
         </View>
@@ -82,10 +82,10 @@ const styles = StyleSheet.create({
     },
     baseText: {
         textAlign: 'center',
-        marginTop: 0,
+        marginTop: 20,
         fontWeight: 'bold',
         fontSize: 34,
-        color:'#52796F',
+        color:'#FFFFFF',
         
     },
     subText: {
@@ -102,43 +102,43 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         fontWeight: 'bold' ,
         fontSize: 24,
-        color: '#52796F',
+        color: '#FFFFFF',
     }, 
     textInput: {
         borderWidth: 1,
         borderColor: '#D9D9D9',
-        backgroundColor: '#D9D9D9',
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         padding: 8,
         margin: 10,
         fontWeight: 'bold',
         width: 175,
         flex:1,
-        marginTop: 50
+        marginTop: 30
     },
     emailAddress: {
         borderWidth: 1,
         borderColor: '#D9D9D9',
-        backgroundColor: '#D9D9D9',
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         padding: 8,
         margin: 10,
         fontWeight: 'bold',
         width: 350,
-        marginTop: 50
+        marginTop: 30
     },
     buttonText: {
         textAlign: 'center',        
         fontWeight: 'bold' ,
-        fontSize: 35,
+        fontSize: 25,
         color: '#FFFF',
     },
     button: {
-        backgroundColor: '#52796F',
-        borderRadius: 20,
+        backgroundColor: '#134840',
+        borderRadius: 50,
         padding: 10,
         margin: 5,
-        marginTop: 110,
+        marginTop: 100,
         marginHorizontal: 70,
 
 
