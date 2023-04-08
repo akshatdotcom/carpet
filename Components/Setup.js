@@ -52,7 +52,7 @@ const containerStyles = StyleSheet.create({
         marginHorizontal: 40,
         borderRadius: 10,
         marginVertical: 60,
-        paddingBottom: 20
+        paddingVertical: 20
     },
     smallContainer: {
         position: 'relative',
@@ -67,6 +67,7 @@ const textStyles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         paddingVertical: 15,
+        paddingTop: 45
     },
     slogan: {
         position: 'relative',
@@ -77,7 +78,6 @@ const textStyles = StyleSheet.create({
     prompt: {
         position: 'relative',
         padding: 15,
-        paddingVertical: 20,
         fontSize: 25,
         fontWeight: 'bold',
         textAlign: 'center'

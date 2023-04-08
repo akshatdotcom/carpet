@@ -4,6 +4,7 @@ import { StyleSheet, Text, TextInput} from 'react-native';
 import { Animated, Dimensions, Image, ScrollView, View, TouchableOpacity, Button } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CreateAccountButton from '../Components/CreateAccountButton';
+import GenericButton from './GenericButton';
 
 const BGColor = "#74AB9D"
 
@@ -12,57 +13,56 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
-            <Text style  = {styles.baseText}>
+            <Text style={styles.baseText}>
                 Verify Your Student {'\n'}
                 Status
             </Text>
 
-            <Text style = {styles.labels}>
+            <Text style={styles.labels}>
                 Name:
             </Text>
 
-           <View style={styles.row}>
-           <TextInput 
-                style = {styles.textInput}
-                placeholder = 'First Name'
-                placeholderTextColor = '#000000'
-            />
-        
-            <TextInput
-                style = {styles.textInput}
-                placeholder = 'Last Name'
-                placeholderTextColor = '#000000'
-                
-            />
-            </View> 
+            <View style={styles.row}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder='First Name'
+                    placeholderTextColor='#000000'
+                />
 
-            <Text style = {styles.labels}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder='Last Name'
+                    placeholderTextColor='#000000'
+
+                />
+            </View>
+
+            <Text style={styles.labels}>
                 Student Email Address:
             </Text>
 
             <TextInput
-                style = {styles.emailAddress}
-                placeholder = 'e.g name@utexas.edu'
-                placeholderTextColor = '#000000'
+                style={styles.emailAddress}
+                placeholder='e.g name@utexas.edu'
+                placeholderTextColor='#000000'
 
             />
 
-            <Text style = {styles.labels}>
-                Expected Graduation: 
+            <Text style={styles.labels}>
+                Expected Graduation:
             </Text>
-<View style={styles.row}>
-            <TextInput
-                style = {styles.textInput}
-                placeholder = 'Month'
-                placeholderTextColor = '#000000'
-            />
-            <TextInput
-                style = {styles.textInput}
-                placeholder = 'Year'
-                placeholderTextColor = '#000000'
-            />
-
-</View>
+            <View style={styles.row}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder='Month'
+                    placeholderTextColor='#000000'
+                />
+                <TextInput
+                    style={styles.textInput}
+                    placeholder='Year'
+                    placeholderTextColor='#000000'
+                />
+            </View>
             <CreateAccountButton></CreateAccountButton>
         </View>
         
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         backgroundColor: BGColor,
       flex: 1,
       fontWeight: 'bold',
-      marginTop: 85,
+      marginTop: 85
     },
     baseText: {
         textAlign: 'center',

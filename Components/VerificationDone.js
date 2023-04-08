@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
+import GenericButton from './GenericButton';
 
 const AppButton = ({ onPress, title }) => (
   <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
@@ -20,7 +21,7 @@ export default function VerificationDone() {
         <Image style={styles.image}
                source={require('../assets/checkmark.png')} 
         />
-        <AppButton title="Continue" />
+        <GenericButton text={ "Continue" }></GenericButton>
       </View>
     );
   };
