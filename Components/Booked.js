@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
 
+const BGColor = "#52796F"
+
 export default function Booked() {
     return (
       <View style={styles.container}>
@@ -27,6 +29,7 @@ export default function Booked() {
 
   const styles = StyleSheet.create({
     container: {
+        backgroundColor: BGColor,
         flex: 0.9,
         flexDirection: 'column',
         justifyContent: 'center',

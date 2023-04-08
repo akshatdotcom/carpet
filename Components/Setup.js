@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 
+import SetupOption from '../Components/SetupOption'
+
 export default function Setup() {
     const titleText = "Welcome to Carpet!"
     const sloganText = "The Campus Marketplace"
@@ -23,24 +25,8 @@ export default function Setup() {
             </View>
             <View style={containerStyles.bigContainer}>
                 <Text style={textStyles.prompt}>{ promptText }</Text>
-                <TouchableOpacity style={containerStyles.optionContainer}>
-                    <View style={containerStyles.insideContainer}>
-                        <Text style={textStyles.option}>{ clientOptionText }</Text>
-                    </View>
-                    <Image
-                        source={searchIconImage}
-                        style={textStyles.image}
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={containerStyles.optionContainer}>
-                    <View style={containerStyles.insideContainer}>
-                            <Text style={textStyles.option}>{ freelancerOptionText }</Text>
-                    </View>
-                    <Image
-                        source={giveImage}
-                        style={textStyles.image}
-                    />
-                </TouchableOpacity>
+                <SetupOption text={ clientOptionText } icon={ giveImage }></SetupOption>
+                <SetupOption text={ freelancerOptionText } icon={ searchIconImage }></SetupOption>
             </View>
             <View style={containerStyles.smallContainer}>
                 <Text style={textStyles.title}>Button goes here</Text>
@@ -95,7 +81,6 @@ const textStyles = StyleSheet.create({
         position: 'relative',
         fontSize: 30,
         fontWeight: 'bold',
-        backgroundColor: "#fff",
         textAlign: 'center',
         paddingVertical: 15,
     },
@@ -103,7 +88,6 @@ const textStyles = StyleSheet.create({
         position: 'relative',
         fontSize: 20,
         fontWeight: 'light',
-        backgroundColor: "#fff",
         textAlign: 'center'
     },
     prompt: {

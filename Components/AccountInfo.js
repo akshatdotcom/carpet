@@ -1,31 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, Text, TextInput} from 'react-native';
 import { Animated, Dimensions, Image, ScrollView, View, TouchableOpacity, Button } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-
+const BGColor = "#74AB9D"
 
 export default function Home() {
 
-    //const edges = useSafeAreaInsets();
 
     return (
         <View style={styles.container}>
             <Text style  = {styles.baseText}>
-                Verify 
-            </Text>
-
-            <Text style = {styles.subText}>
-                 your student status.
+                Verify Your Student {'\n'}
+                Status
             </Text>
 
             <Text style = {styles.labels}>
                 Name:
             </Text>
 
-            
-            <TextInput 
+           <View style={styles.row}>
+           <TextInput 
                 style = {styles.textInput}
                 placeholder = 'First Name'
                 placeholderTextColor = '#000000'
@@ -37,6 +33,7 @@ export default function Home() {
                 placeholderTextColor = '#000000'
                 
             />
+            </View> 
 
             <Text style = {styles.labels}>
                 Student Email Address:
@@ -52,7 +49,7 @@ export default function Home() {
             <Text style = {styles.labels}>
                 Expected Graduation: 
             </Text>
-
+<View style={styles.row}>
             <TextInput
                 style = {styles.textInput}
                 placeholder = 'Month'
@@ -64,32 +61,31 @@ export default function Home() {
                 placeholderTextColor = '#000000'
             />
 
+</View>
+
             <TouchableOpacity style = {styles.button}>
                 <Text style = {styles.buttonText}>
-                    Button
+                    Create my Account
                 </Text>
             </TouchableOpacity>
-
-
-            <StatusBar style="auto" />
         </View>
+        
     );
 }
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: BGColor,
       flex: 1,
-      backgroundColor: '#fff',
       fontWeight: 'bold',
-    //   alignItems: 'center',
       marginTop: 85,
-    //   justifyContent: 'center',
     },
     baseText: {
         textAlign: 'center',
-        marginTop: 0,
+        marginTop: 20,
         fontWeight: 'bold',
         fontSize: 34,
+        color:'#FFFFFF',
         
     },
     subText: {
@@ -102,51 +98,54 @@ const styles = StyleSheet.create({
     },
     labels: {
         textAlign: 'left',
-        marginTop: 25,
+        marginTop: 50,
         marginLeft: 10,
         fontWeight: 'bold' ,
         fontSize: 24,
-        color: '#4D4A95',
+        color: '#FFFFFF',
     }, 
     textInput: {
         borderWidth: 1,
         borderColor: '#D9D9D9',
-        backgroundColor: '#D9D9D9',
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         padding: 8,
         margin: 10,
         fontWeight: 'bold',
         width: 175,
+        flex:1,
+        marginTop: 30
     },
     emailAddress: {
         borderWidth: 1,
         borderColor: '#D9D9D9',
-        backgroundColor: '#D9D9D9',
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         padding: 8,
         margin: 10,
         fontWeight: 'bold',
         width: 350,
+        marginTop: 30
     },
     buttonText: {
-        textAlign: 'center',
-       
-        //width: 300, 
-        
+        textAlign: 'center',        
         fontWeight: 'bold' ,
-        fontSize: 35,
-        color: '#4D4A95',
+        fontSize: 25,
+        color: '#FFFF',
     },
     button: {
-        backgroundColor: '#D9D9D9',
-        borderRadius: 20,
+        backgroundColor: '#134840',
+        borderRadius: 50,
         padding: 10,
         margin: 5,
-        marginTop: 110,
+        marginTop: 100,
         marginHorizontal: 70,
 
 
     },
+    row: {
+        flexDirection: 'row',
+    }
     
 
   });
