@@ -5,7 +5,7 @@ export default function Preferences() {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             <Text style={styles.firstText}>
-                What services are you looking at?
+                What services are you looking for?
             </Text>
         </ScrollView>
     );
