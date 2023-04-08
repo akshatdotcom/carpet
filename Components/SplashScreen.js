@@ -47,7 +47,7 @@ export default function SplashScreen() {
                     scaleLogo,
                     {
                         // Scaling to 0.35
-                        toValue: 0.3,
+                        toValue: 1.75,
                         useNativeDriver: true
                     }
                 ),
@@ -64,8 +64,8 @@ export default function SplashScreen() {
                     {
                         // Moving to Right Most...
                         toValue: {
-                            x: (Dimensions.get("window").width / 2) - 130,
-                            y: (Dimensions.get('window').height / 2) - 9
+                            x: (Dimensions.get("window").width / 2) - 195,
+                            y: (Dimensions.get('window').height / 2) + 365,
                         },
                         useNativeDriver: true
                     }
@@ -75,7 +75,7 @@ export default function SplashScreen() {
                     {
                         // Moving to Right Most...
                         toValue: {
-                            x: (Dimensions.get("window").width / 2) - 20,
+                            x: (Dimensions.get("window").width / 2) - 104,
                             // Since image size is 100...
                             y: (Dimensions.get('window').height / 2) - 105
                         },
@@ -123,6 +123,7 @@ export default function SplashScreen() {
                     <Animated.Image source={Logo} style={{
                         width: 150,
                         height: 150,
+                        alignItems: 'center',
                         transform: [
                             { translateX: moveLogo.x },
                             { translateY: moveLogo.y },

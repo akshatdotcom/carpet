@@ -1,8 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity} from 'react-native';
 import { Animated, Dimensions, Image, ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+//Navigation import
+
 
 // Post's....
 import Post1 from '../assets/post1.jpeg';
@@ -15,6 +18,8 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
+          
+          <View>
             <Text style  = {styles.baseText}>
                 Welcome
             </Text>
@@ -22,8 +27,14 @@ export default function Home() {
             <Text style = {styles.subText}>to
                  the campus marketplace!
             </Text>
+         </View>
 
-            <Text style = {styles.subText2}> Let's get started </Text>
+            
+            <TouchableOpacity style = {styles.button}>
+                <Text style = {styles.buttonText}>
+                    Let's get started
+                </Text>
+            </TouchableOpacity>
 
             <StatusBar style="auto" />
         </View>
@@ -33,19 +44,20 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      fontWeight: 'bold',
+      backgroundColor: '#f5f5f5',
+      paddingTop: 370,
+      paddingBottom: 70,
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'space-between',
     },
     baseText: {
         width: 365, 
         height: 40,
         left: 115,
         top: -255,
+        marginTop: 10,
         fontWeight: 'bold' ,
-        fontSize: 34,
-        
+        fontSize: 34,          
     },
     subText: {
         width: 365, 
@@ -54,7 +66,7 @@ const styles = StyleSheet.create({
         top: -255,
         fontWeight: 'bold' ,
         fontSize: 18,
-        color: '#4D4A95',
+        color: '#52796F',
         
     },
     subText2: {
@@ -64,8 +76,29 @@ const styles = StyleSheet.create({
         top: 275,
         fontWeight: 'bold' ,
         fontSize: 25,
-        color: '#4D4A95',
+        color: '#52796F',
         
+    }, 
+    buttonText: {
+        textAlign: 'center',
+       
+        //width: 300, 
+        fontWeight: 'bold' ,
+        fontSize: 25,
+        color: '#fff',
     },
+    button: {
+        backgroundColor: '#52796F',
+        borderRadius: 20,
+        width: 250,
+        padding: 10,
+        margin: 5,
+        marginTop: 110,
+        marginHorizontal: 70,
+
+      
+
+    },
+    
   });
 
