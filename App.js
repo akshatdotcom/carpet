@@ -16,15 +16,16 @@ import Preferences from './Components/Preferences';
 export default function App() {
   return (
   
-
-  //  <VerificationDone></VerificationDone>
+  <SafeAreaProvider style={styles.container}>
+    <VerificationDone></VerificationDone>
+  </SafeAreaProvider>
   //  <SafeAreaProvider>
   //   <SplashScreen/>
   //  </SafeAreaProvider>
   //  <Setup></Setup>
-  <SafeAreaProvider style={styles.container}>
-     <AccountInfo ></AccountInfo>
-  </SafeAreaProvider>
+  // <SafeAreaProvider style={styles.container}>
+  //    <AccountInfo ></AccountInfo>
+  // </SafeAreaProvider>
     // <Login></Login>
     //  <Booked></Booked>
     // <Preferences></Preferences>
