@@ -3,10 +3,10 @@ import { Animated, Dimensions, Image, Text, View } from "react-native";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 // Logo....
-import Logo from '../assets/OfficialCarpetLogo.png';
+import Logo from '../assets/TheCarpetLogo.png';
 import Home from './Home';
 
-const BGColor = "#52796F"
+const BGColor = "#74AB9D"
 
 export default function SplashScreen() {
 
@@ -64,8 +64,8 @@ export default function SplashScreen() {
                     {
                         // Moving to Right Most...
                         toValue: {
-                            x: (Dimensions.get("window").width / 2) - 195,
-                            y: (Dimensions.get('window').height / 2) + 365,
+                            x: (Dimensions.get("window").width / 2) - 220,
+                            y: (Dimensions.get('window').height / 2) + 400,
                         },
                         useNativeDriver: true
                     }
