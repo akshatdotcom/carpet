@@ -8,19 +8,23 @@ const AppButton = ({ onPress, title }) => (
   </TouchableOpacity>
 );
 
+const BGColor = "#74AB9D";
+
 export default function VerificationDone() {
     return (
       <View style={styles.container}>
         <Text style={styles.firstText}>
-            Your student status has been successfully verified!
+            Your student status has {'\n'}
+            been successfully {'\n'}
+            verified!
         </Text>
-        <Text style={styles.secondText}>
+        <Image style={styles.image}
+               source={require('../assets/Clipboard.png')} 
+        />
+         <Text style={styles.secondText}>
             Your account is ready! {'\n'}
             Now for a few questions...
         </Text>
-        <Image style={styles.image}
-               source={require('../assets/checkmark.png')} 
-        />
         <GenericButton text={ "Continue" }></GenericButton>
       </View>
     );
@@ -33,19 +37,21 @@ export default function VerificationDone() {
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
+        backgroundColor: BGColor,
     },
     firstText: {
-        color: "black",
+        color: "white",
         fontFamily: "Lehend",
         fontWeight: 600,
         fontSize: 30,
         textAlign: 'center',
         margin: 20,
+        marginTop: 0
     },
     secondText: {
-        color: "black",
+        color: "white",
         fontFamily: "Lehend",
-        fontWeight: 200,
+        fontWeight: 300,
         fontSize: 16,
         textAlign: 'center',
         marginBottom: 60,
@@ -58,7 +64,8 @@ export default function VerificationDone() {
       backgroundColor: "#000000",
       borderRadius: 10,
       paddingVertical: 10,
-      paddingHorizontal: 12
+      paddingHorizontal: 12,
+      // marginTop: 50
     },
     appButtonText: {
       fontSize: 18,

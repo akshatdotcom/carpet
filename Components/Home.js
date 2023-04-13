@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         top: -255,
         fontWeight: 'bold' ,
         fontSize: 18,
-        color: '#52796F',
+        color: '#74AB9D',
         
     },
     subText2: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
     button: {
-        backgroundColor: '#52796F',
+        backgroundColor: '#74AB9D',
         borderRadius: 20,
         width: 250,
         padding: 10,
