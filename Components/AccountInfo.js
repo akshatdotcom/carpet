@@ -71,7 +71,7 @@ export default function Home() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: BGColor,
+      backgroundColor: BGColor,
       flex: 1,
       fontWeight: 'bold',
       marginTop: 85
