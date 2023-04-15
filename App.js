@@ -12,6 +12,8 @@ import VerificationDone from './Components/VerificationDone';
 import Home from './Components/Home';
 import Booked from './Components/Booked';
 import Preferences from './Components/Preferences';
+import SearchPage from './Components/SearchPage';
+import BookingsOrders from './Components/BookingsOrders';
 
 export default function App() {
   return (

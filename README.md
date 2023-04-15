@@ -1,4 +1,4 @@
-# BNPL
+# Freelance | CARPET: The Campus Marketplace
 ## Texas Convergent E-Commerce Build Team
 ### **Members**
 ### Tech

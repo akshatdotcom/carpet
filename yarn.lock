@@ -5948,6 +5948,11 @@ react-native-ico-material-design@^3.3.1:
   dependencies:
     react-svg-main "^2.2.6"
 
+react-native-imaged-card-view@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/react-native-imaged-card-view/-/react-native-imaged-card-view-0.0.11.tgz"
+  integrity sha512-xVvI0mWP1SR+J61P5X649eDZXunCXtSMZ+GkGsY03vEPofnfah8q3Am2NDX9KcO6SzdNtxRJeLmDogyfj63ReQ==
+
 react-native-ratings@8.0.4:
   version "8.0.4"
   resolved "https://registry.npmjs.org/react-native-ratings/-/react-native-ratings-8.0.4.tgz"
