@@ -3,16 +3,15 @@ import {StyleSheet, ScrollView, View, Text, Button, TouchableOpacity} from 'reac
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import { services } from './utils.js';
 
-
+const BGColor = "#74AB9D"
 const Card = ({id, title, url}) => {
-    const [isSelected, setIsSelected] = useState(false);
-
+const [isSelected, setIsSelected] = useState(false);
     return (
        <TouchableOpacity
         activeOpacity={0.6}
         style={
           isSelected
-            ? [{backgroundColor: '#65B870'}, styles.cardElement]
+            ? [{backgroundColor: '#D8EDDA'}, styles.cardElement]
             : [{backgroundColor: '#BBD8D3'}, styles.cardElement]
         }
         onPress={() => {
@@ -34,7 +33,7 @@ const Card = ({id, title, url}) => {
 
 export default function Preferences() {
     return (
-        <ScrollView >
+        <ScrollView style={{backgroundColor: BGColor}}>
 
             <Text style={styles.firstText}>
                 What services are you looking for?
@@ -51,7 +50,7 @@ export default function Preferences() {
                 ))}
             </View>
 
-            <AppButton title="Continue" />
+            <AppButton title="Done" />
 
         </ScrollView>
     );
@@ -66,8 +65,8 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     firstText: {
-        color: "black",
-        fontFamily: "Lehend",
+        color: "#F5F5F5",
+        fontFamily: "Lexend",
         fontWeight: 800,
         fontSize: 30,
         textAlign: 'center',
@@ -78,8 +77,8 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        marginLeft: 15,
-        marginRight: 2,
+        marginLeft: 33,
+        // marginRight: 2,
     },
     cardText: {
         fontSize: 20,
@@ -90,6 +89,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginRight: 20,
         marginBottom: 20,
+        marginTop: 13,
         borderRadius: 20,
         height: 140,
         width: 140,
@@ -110,10 +110,10 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         paddingVertical: 10,
         paddingHorizontal: 12,
-        marginBottom: 40,
-        marginTop: 20,
+        marginBottom: 70,
+        marginTop: 40,
         width: 250,
-        marginLeft: 70,
+        marginLeft: 90,
       },
       appButtonText: {
         fontSize: 18,
