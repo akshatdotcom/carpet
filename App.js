@@ -19,15 +19,16 @@ export default function App() {
   // <SafeAreaProvider style={styles.container}>
   //   <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
-   <SafeAreaProvider>
-    <SplashScreen/>
-   </SafeAreaProvider>
-  //  <Setup></Setup>
+  //  <SafeAreaProvider>
+  //   <SplashScreen/>
+  //  </SafeAreaProvider>
+   <Setup></Setup>
   // <SafeAreaProvider style={styles.container}>
   //    <AccountInfo ></AccountInfo>
   // </SafeAreaProvider>
-    // <Login></Login>
-    //  <Booked></Booked>
+  //  <SafeAreaProvider style={styles.container}>
+  //   <Booked></Booked>
+  // </SafeAreaProvider>
     // <Preferences></Preferences>
     );
 }

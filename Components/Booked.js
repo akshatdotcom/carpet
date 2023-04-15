@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
 
-const BGColor = "#52796F"
+const BGColor = "#74AB9D"
 
 export default function Booked() {
     return (

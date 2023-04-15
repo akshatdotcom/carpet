@@ -63,7 +63,9 @@ export default function Home() {
                     placeholderTextColor='#000000'
                 />
             </View>
+            <View style={{marginTop: 60}}>
             <CreateAccountButton></CreateAccountButton>
+            </View>
         </View>
         
     );
@@ -133,9 +135,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#134840',
         borderRadius: 50,
         padding: 10,
-        margin: 5,
-        marginTop: 100,
+        margin: 15,
         marginHorizontal: 70,
+        marginTop: 60
 
 
     },

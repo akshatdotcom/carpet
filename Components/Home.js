@@ -95,9 +95,6 @@ const styles = StyleSheet.create({
         margin: 5,
         marginTop: 110,
         marginHorizontal: 70,
-
-      
-
     },
     
   });

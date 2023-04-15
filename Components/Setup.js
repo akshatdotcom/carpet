@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import SetupOptionButton from './SetupOptionButton'
 import CreateAccountButton from './CreateAccountButton'
 
+const BGColor = "#74AB9D"
+
 export default function Setup() {
     const titleText = "Welcome to Carpet!"
     const sloganText = "The Campus Marketplace"
@@ -29,7 +31,7 @@ export default function Setup() {
                 <SetupOptionButton text={ clientOptionText } icon={ giveImage }></SetupOptionButton>
                 <SetupOptionButton text={ freelancerOptionText } icon={ searchIconImage }></SetupOptionButton>
             </View>
-            <View style={containerStyles.smallContainer}>
+            <View style={{marginBottom: 90}}>
                 <CreateAccountButton></CreateAccountButton>
                 <Text style={textStyles.slogan}>{ existingAccountText + SPACE + loginButtonText }</Text>
             </View>
@@ -42,11 +44,12 @@ const containerStyles = StyleSheet.create({
         position: 'relative',
         paddingBottom: 10,
         paddingTop: 45,
-        flex: 1
+        flex: 1,
+        backgroundColor: BGColor
     },
     bigContainer: {
         position: 'relative',
-        backgroundColor: '#D9D9D952',
+        backgroundColor: 'rgba(201, 201, 201, 0.3)',
         flex: 4,
         borderWidth: 1.5,
         marginHorizontal: 40,
@@ -65,6 +68,7 @@ const textStyles = StyleSheet.create({
         position: 'relative',
         fontSize: 30,
         fontWeight: 'bold',
+        color: '#F5F5F5',
         textAlign: 'center',
         paddingVertical: 15,
         paddingTop: 45
@@ -72,11 +76,13 @@ const textStyles = StyleSheet.create({
     slogan: {
         position: 'relative',
         fontSize: 20,
+        color: '#F5F5F5',
         fontWeight: 'light',
         textAlign: 'center'
     },
     prompt: {
         position: 'relative',
+        color: '#F5F5F5',
         padding: 15,
         fontSize: 25,
         fontWeight: 'bold',
