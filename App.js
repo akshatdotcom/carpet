@@ -14,24 +14,36 @@ import Booked from './Components/Booked';
 import Preferences from './Components/Preferences';
 import SearchPage from './Components/SearchPage';
 import BookingsOrders from './Components/BookingsOrders';
+import BookingCard from './Components/BookingCard';
 
 export default function App() {
   return (
-  
-  // <SafeAreaProvider style={styles.container}>
-  //   <VerificationDone></VerificationDone>
-  // </SafeAreaProvider>
-  //  <SafeAreaProvider>
+  // <SafeAreaProvider>
   //   <SplashScreen/>
   //  </SafeAreaProvider>
-   <Setup></Setup>
+
+  // <Setup></Setup>
+
   // <SafeAreaProvider style={styles.container}>
   //    <AccountInfo ></AccountInfo>
   // </SafeAreaProvider>
-  //  <SafeAreaProvider style={styles.container}>
+
+  // <SafeAreaProvider style={styles.container}>
+  //   <VerificationDone></VerificationDone>
+  // </SafeAreaProvider>
+
+ <Preferences></Preferences>
+
+//  <BookingsOrders></BookingsOrders>
+
+  //   <SafeAreaProvider style={styles.container}>
   //   <Booked></Booked>
   // </SafeAreaProvider>
-    // <Preferences></Preferences>
+
+  ///// Variables //////
+  // <BookingCard></BookingCard>
+  // <NavigationBar></NavigationBar>
+/// <SearchPage></SearchPage>
     );
 }
 
