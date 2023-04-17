@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, FlatList } from 'react-native';
+import { StyleSheet, ScrollView, Text, View, Dimensions, FlatList } from 'react-native';
 
 import BookingCard from './BookingCard';
 import { bookings } from './utils';
@@ -9,6 +9,7 @@ const BGColor = "#74AB9D"
 export default function Booked() {
     return (
       <View style={styles.container}>
+        <ScrollView style={styles.scroll}>
         
           <Text style={styles.firstText}>
               Upcoming Bookings
@@ -20,6 +21,7 @@ export default function Booked() {
             {bookings.map(item => (
               item.service === 'Photography' ? <BookingCard 
                     id={item.id}
+                    name={item.name}
                     service={item.service}
                     jobDescription={item.jobDescription}
                     date={item.date}
@@ -38,6 +40,7 @@ export default function Booked() {
             {bookings.map(item => (
               item.service === 'Cosmetics' ? <BookingCard 
                     id={item.id}
+                    name={item.name}
                     service={item.service}
                     jobDescription={item.jobDescription}
                     date={item.date}
@@ -49,6 +52,27 @@ export default function Booked() {
             ))}
           </View>
 
+
+          <Text style={styles.secondText}>
+             Videography
+          </Text>
+          <View>
+            {bookings.map(item => (
+              item.service === 'Videography' ? <BookingCard 
+                    id={item.id}
+                    name={item.name}
+                    service={item.service}
+                    jobDescription={item.jobDescription}
+                    date={item.date}
+                    time={item.time}
+                    location={item.location}
+                    image={item.image}
+              />  
+              : null            
+            ))}
+          </View>
+
+        </ScrollView>
       </View>
     );
   };
@@ -61,6 +85,11 @@ export default function Booked() {
         marginTop: 85,
         margin: 10,
     },
+    scroll: {
+        width: Math.round(Dimensions.get('window').width) - 10,
+
+    },
+
     firstText: {
         color: "#FFFFFF",
         fontFamily: "Lehend",

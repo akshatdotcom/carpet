@@ -2,12 +2,12 @@ import React from "react";
 import { View, Text, StyleSheet, Dimensions, Image} from 'react-native';
 
 
-const BookingCard = ({id, service, jobDescription, date, time, location, image}) => {
+const BookingCard = ({id, name, service, jobDescription, date, time, location, image}) => {
     return (
         <View style={styles.cardContainer}>
-                <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
+                <Image style={styles.imageStyle} source={image} />
                 <Text style={styles.name}>
-                    John Doe
+                    {name}
                 </Text>
                 <Text style={styles.bodyText}>
                     {service} {'\n\n'}
@@ -34,11 +34,11 @@ const styles = StyleSheet.create({
             width: 5,
             height: 5,
         },
-        shadowOpacity: 0.75,
+        shadowOpacity: 0.9,
         margin: 10,
         paddingLeft: 10,
-        shadowRadius: 5,
-        elevation: 9,
+        shadowRadius: 9,
+        elevation:5,
     },
     imageStyle: {
         alignSelf: 'left',
