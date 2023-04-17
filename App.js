@@ -18,9 +18,9 @@ import BookingCard from './Components/BookingCard';
 
 export default function App() {
   return (
-  // <SafeAreaProvider>
-  //   <SplashScreen/>
-  //  </SafeAreaProvider>
+  <SafeAreaProvider>
+    <SplashScreen/>
+   </SafeAreaProvider>
 
   // <Setup></Setup>
 
@@ -32,7 +32,7 @@ export default function App() {
   //   <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
- <Preferences></Preferences>
+//  <Preferences></Preferences>
 
 //  <BookingsOrders></BookingsOrders>
 
