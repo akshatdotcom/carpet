@@ -15,6 +15,8 @@ import Preferences from './Components/Preferences';
 import SearchPage from './Components/SearchPage';
 import BookingsOrders from './Components/BookingsOrders';
 import BookingCard from './Components/BookingCard';
+import BookingSelection from './Components/BookingSelection';
+import TestFlexbox from './Components/TestFlexbox';
 
 export default function App() {
   return (
@@ -32,9 +34,11 @@ export default function App() {
   //   <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
- <Preferences></Preferences>
+//  <Preferences></Preferences>
 
 //  <BookingsOrders></BookingsOrders>
+
+ <BookingSelection></BookingSelection>
 
   //   <SafeAreaProvider style={styles.container}>
   //   <Booked></Booked>
@@ -44,6 +48,7 @@ export default function App() {
   // <BookingCard></BookingCard>
   // <NavigationBar></NavigationBar>
 /// <SearchPage></SearchPage>
+// <TestFlexbox></TestFlexbox>
     );
 }
 

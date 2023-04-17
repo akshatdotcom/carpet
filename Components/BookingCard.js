@@ -9,7 +9,7 @@ const BookingCard = () => {
             <Text style={styles.name}>
                 John Doe
             </Text>
-            {/* <Text style={styles.bodyText}>
+            <Text style={styles.bodyText}>
                 Service: Photography {'\n\n'}
                 Job Description: Portrait Headshots {'\n'}
                 Date: 4/26/23  {'\n'}
@@ -18,7 +18,7 @@ const BookingCard = () => {
                 Location: {'\n'}
                         101 25th St, Apt. 202, Austin, TX 78705
 
-            </Text> */}
+            </Text>
         </View>
     );
 };
@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.75,
         margin: 10,
         paddingLeft: 10,
+        paddingTop: 10,
         flexDirection: 'column',
+        flex: 1,
         justifyContent: 'center',
         shadowRadius: 5,
         elevation: 9,
