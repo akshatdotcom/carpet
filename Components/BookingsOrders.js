@@ -8,20 +8,20 @@ const BGColor = "#74AB9D"
 export default function Booked() {
     return (
       <View style={styles.container}>
-        <Text style={styles.firstText}>
-            Upcoming Bookings
-        </Text>
-        <Text style={styles.secondText}>
-           Photography
-        </Text>
-        <BookingCard></BookingCard>
+        
+          <Text style={styles.firstText}>
+              Upcoming Bookings
+          </Text>
+          <Text style={styles.secondText}>
+             Photography
+          </Text>
+          <BookingCard></BookingCard>
 
-        <Text style={styles.secondText}>
-           Cosmetics
-        </Text>
+          <Text style={styles.secondText}>
+             Cosmetics
+          </Text>
 
-        <BookingCard></BookingCard>
-
+          <BookingCard></BookingCard>
       </View>
     );
   };
@@ -61,5 +61,12 @@ export default function Booked() {
         fontSize: 16,
         textAlign: 'center',
         marginBottom: 60,
-    }
+    },
+    row: {
+      
+
+    },
+    column: {
+
+    },
   });
