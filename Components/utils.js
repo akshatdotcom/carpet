@@ -61,3 +61,24 @@ export const services = [
         url: 'leaf-outline',
     }
 ];
+
+export const bookings = [
+    {
+        id: 1,
+        service: 'Photography',
+        jobDescription: 'Job Description: Portrait Headhsots',
+        date: 'Date: 4/26/23',
+        time: 'Time: 11AM - 1PM',
+        location: '101 25th St, Austin, TX 78705',
+        image: '../assets/Photographer.png',
+    },
+    {
+        id: 2,
+        service: 'Cosmetics',
+        jobDescription: 'Job Description: Formal Makeup',
+        date: '4/28/23',
+        time: '12PM - 4PM',
+        location: '2624 Whitis Ave, Austin, TX 78705',
+        image: '../assets/Cosmetologist.png',
+    },
+];

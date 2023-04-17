@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, StatusBar, FlatList } from 'react-native';
 
 import BookingCard from './BookingCard';
+import { bookings } from './utils';
 
 const BGColor = "#74AB9D"
 
@@ -15,13 +16,39 @@ export default function Booked() {
           <Text style={styles.secondText}>
              Photography
           </Text>
-          <BookingCard></BookingCard>
+          <View>
+            {bookings.map(item => (
+              item.service === 'Photography' ? <BookingCard 
+                    id={item.id}
+                    service={item.service}
+                    jobDescription={item.jobDescription}
+                    date={item.date}
+                    time={item.time}
+                    location={item.location}
+                    image={item.image}
+              />  
+              : null            
+            ))}
+          </View>
 
           <Text style={styles.secondText}>
              Cosmetics
           </Text>
+          <View>
+            {bookings.map(item => (
+              item.service === 'Cosmetics' ? <BookingCard 
+                    id={item.id}
+                    service={item.service}
+                    jobDescription={item.jobDescription}
+                    date={item.date}
+                    time={item.time}
+                    location={item.location}
+                    image={item.image}
+              />  
+              : null            
+            ))}
+          </View>
 
-          <BookingCard></BookingCard>
       </View>
     );
   };
