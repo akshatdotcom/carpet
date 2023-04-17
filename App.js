@@ -34,14 +34,14 @@ export default function App() {
   //   <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
-//  <Preferences></Preferences>
+// //  <Preferences></Preferences>
 
 //  <BookingsOrders></BookingsOrders>
 
  <BookingSelection></BookingSelection>
 
-  //   <SafeAreaProvider style={styles.container}>
-  //   <Booked></Booked>
+  // <SafeAreaProvider style={styles.container}>
+  //   <BookingsOrders></BookingsOrders>
   // </SafeAreaProvider>
 
   ///// Variables //////

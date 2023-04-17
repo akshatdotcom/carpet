@@ -5,20 +5,25 @@ import { View, Text, StyleSheet, Dimensions, Image} from 'react-native';
 const BookingCard = () => {
     return (
         <View style={styles.cardContainer}>
-            <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
-            <Text style={styles.name}>
-                John Doe
-            </Text>
-            <Text style={styles.bodyText}>
-                Service: Photography {'\n\n'}
-                Job Description: Portrait Headshots {'\n'}
-                Date: 4/26/23  {'\n'}
-                Time: 11AM - 1PM  {'\n'}
-                Price: $85.00+  {'\n'}
-                Location: {'\n'}
-                        101 25th St, Apt. 202, Austin, TX 78705
+            <View style={styles.row}>
+                <View style={styles.column}>
 
-            </Text>
+                <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
+                <Text style={styles.name}>
+                    John Doe
+                </Text>
+                <Text style={styles.bodyText}>
+                    Service: Photography {'\n\n'}
+                    Job Description: Portrait Headshots {'\n\n'}
+
+                    Date: 4/26/23  {'\n'}
+                    Time: 11AM - 1PM  {'\n\n'}
+                    Location: {'\n'}
+                            101 25th St, Apt. 202, Austin, TX 78705
+
+                </Text>
+                </View>
+            </View>
         </View>
     );
 };
@@ -38,16 +43,13 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.75,
         margin: 10,
         paddingLeft: 10,
-        paddingTop: 10,
-        flexDirection: 'column',
-        flex: 1,
-        justifyContent: 'center',
         shadowRadius: 5,
         elevation: 9,
     },
     imageStyle: {
-        alignSelf: 'right'
-
+        alignSelf: 'left',
+        marginTop: 60,
+    
     },
     name: {
         paddingTop: 5,
@@ -55,7 +57,17 @@ const styles = StyleSheet.create({
         color: "#fff",
     },
     bodyText: {
-        marginLeft: 220,
+        marginTop: -130,
+        marginLeft: 80,
+        fontWeight: '700',
+        color: "#fff",
+    },
+    row: {
+        // flexDirection: 'row',
+        // flexWrap: 'wrap',
+    },
+    column: {
+        // flexDirection: 'column',
     },
 });
 
