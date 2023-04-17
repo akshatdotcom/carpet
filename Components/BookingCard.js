@@ -5,25 +5,25 @@ import { View, Text, StyleSheet, Dimensions, Image} from 'react-native';
 const BookingCard = () => {
     return (
         <View style={styles.cardContainer}>
-            <View style={styles.row}>
+            {/* <View style={styles.row}> */}
                 <View style={styles.column}>
 
-                <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
-                <Text style={styles.name}>
-                    John Doe
-                </Text>
-                <Text style={styles.bodyText}>
-                    Service: Photography {'\n\n'}
-                    Job Description: Portrait Headshots {'\n\n'}
+                    <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
+                    <Text style={styles.name}>
+                        John Doe
+                    </Text>
+                    <Text style={styles.bodyText}>
+                        Service: Photography {'\n\n'}
+                        Job Description: Portrait Headshots {'\n\n'}
 
-                    Date: 4/26/23  {'\n'}
-                    Time: 11AM - 1PM  {'\n\n'}
-                    Location: {'\n'}
-                            101 25th St, Apt. 202, Austin, TX 78705
+                        Date: 4/26/23  {'\n'}
+                        Time: 11AM - 1PM  {'\n\n'}
+                        Location: {'\n'}
+                                101 25th St, Apt. 202, Austin, TX 78705
 
-                </Text>
+                    </Text>
                 </View>
-            </View>
+            {/* </View> */}
         </View>
     );
 };
