@@ -2,28 +2,22 @@ import React from "react";
 import { View, Text, StyleSheet, Dimensions, Image} from 'react-native';
 
 
-const BookingCard = () => {
+const BookingCard = ({id, service, jobDescription, date, time, location, image}) => {
     return (
         <View style={styles.cardContainer}>
-            {/* <View style={styles.row}> */}
-                <View style={styles.column}>
+                <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
+                <Text style={styles.name}>
+                    John Doe
+                </Text>
+                <Text style={styles.bodyText}>
+                    {service} {'\n\n'}
+                    {jobDescription} {'\n\n'}
+                    {date}  {'\n'}
+                    {time} {'\n\n'}
+                    Location: {'\n'}
+                            {location}
 
-                    <Image style={styles.imageStyle} source={require('../assets/Photographer.png')} />
-                    <Text style={styles.name}>
-                        John Doe
-                    </Text>
-                    <Text style={styles.bodyText}>
-                        Service: Photography {'\n\n'}
-                        Job Description: Portrait Headshots {'\n\n'}
-
-                        Date: 4/26/23  {'\n'}
-                        Time: 11AM - 1PM  {'\n\n'}
-                        Location: {'\n'}
-                                101 25th St, Apt. 202, Austin, TX 78705
-
-                    </Text>
-                </View>
-            {/* </View> */}
+                </Text>
         </View>
     );
 };
@@ -61,13 +55,6 @@ const styles = StyleSheet.create({
         marginLeft: 80,
         fontWeight: '700',
         color: "#fff",
-    },
-    row: {
-        // flexDirection: 'row',
-        // flexWrap: 'wrap',
-    },
-    column: {
-        // flexDirection: 'column',
     },
 });
 
