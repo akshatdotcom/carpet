@@ -17,6 +17,7 @@ import BookingsOrders from './Components/BookingsOrders';
 import BookingCard from './Components/BookingCard';
 import BookingSelection from './Components/BookingSelection';
 import TestFlexbox from './Components/TestFlexbox';
+import Main from './Components/Main';
 
 export default function App() {
   return (
@@ -35,10 +36,10 @@ export default function App() {
   // </SafeAreaProvider>
 
 // //  <Preferences></Preferences>
-
+      <Main></Main>
 //  <BookingsOrders></BookingsOrders>
 
- <BookingSelection></BookingSelection>
+//  <BookingSelection></BookingSelection>
 
   // <SafeAreaProvider style={styles.container}>
   //   <BookingsOrders></BookingsOrders>
