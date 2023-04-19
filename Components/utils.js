@@ -50,7 +50,6 @@ export const services = [
     },
     {
         id: 9,
-        title: 'Arts and Craft',
         name: 'artsAndCraft',
         url: 'easel-outline'
     },
@@ -65,21 +64,33 @@ export const services = [
 export const bookings = [
     {
         id: 1,
+        name: 'John Doe',
         service: 'Photography',
         jobDescription: 'Job Description: Portrait Headhsots',
         date: 'Date: 4/26/23',
         time: 'Time: 11AM - 1PM',
         location: '101 25th St, Austin, TX 78705',
-        image: '../assets/Photographer.png',
+        image: require('../assets/Photographer.png'),
     },
     {
         id: 2,
+        name: 'Jane Eyre',
         service: 'Cosmetics',
         jobDescription: 'Job Description: Formal Makeup',
         date: '4/28/23',
         time: '12PM - 4PM',
         location: '2624 Whitis Ave, Austin, TX 78705',
-        image: '../assets/Cosmetologist.png',
+        image: require('../assets/Cosmetologist.png'),
+    },
+    {
+        id: 2,
+        name: 'Jill Ross',
+        service: 'Videography',
+        jobDescription: 'Job Description: Social Media Ads',
+        date: '5/8/23',
+        time: '5PM - 7PM',
+        location: '2804 Elkins Blvd, Sugar Land, TX 77479',
+        image: require('../assets/Videographer.png'),
     },
 ];
 

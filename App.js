@@ -27,16 +27,16 @@ export default function App() {
 
   // <Setup></Setup>
 
-  // <SafeAreaProvider style={styles.container}>
-  //    <AccountInfo ></AccountInfo>
-  // </SafeAreaProvider>
+  <SafeAreaProvider style={styles.container}>
+     <BookingsOrders></BookingsOrders>
+  </SafeAreaProvider>
 
   // <SafeAreaProvider style={styles.container}>
     // <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
 // //  <Preferences></Preferences>
-      <Main></Main>
+      
 //  <BookingsOrders></BookingsOrders>
 
 //  <BookingSelection></BookingSelection>
