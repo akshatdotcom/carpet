@@ -27,9 +27,9 @@ export default function App() {
 
   // <Setup></Setup>
 
-  <SafeAreaProvider style={styles.container}>
-     <BookingsOrders></BookingsOrders>
-  </SafeAreaProvider>
+  // <SafeAreaProvider style={styles.container}>
+  //    <BookingsOrders></BookingsOrders>
+  // </SafeAreaProvider>
 
   // <SafeAreaProvider style={styles.container}>
     // <VerificationDone></VerificationDone>
@@ -38,6 +38,8 @@ export default function App() {
 // //  <Preferences></Preferences>
       
 //  <BookingsOrders></BookingsOrders>
+
+<Main></Main>
 
 //  <BookingSelection></BookingSelection>
 
