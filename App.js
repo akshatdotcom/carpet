@@ -32,7 +32,7 @@ export default function App() {
   // </SafeAreaProvider>
 
   // <SafeAreaProvider style={styles.container}>
-  //   <VerificationDone></VerificationDone>
+    // <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
 // //  <Preferences></Preferences>

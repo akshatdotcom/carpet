@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {StyleSheet, ScrollView, View, Text, Button, TouchableOpacity} from 'react-native';
-
+import { filters } from './utils.js';
+import { FilterCards } from './FilterCards.js';
 import StandardCard from './StandardCard';
 
 const BGColor = "#74AB9D"
@@ -12,9 +13,26 @@ export default function Booked() {
         <Text style={styles.firstText}>
             Cosmetic
         </Text>
+        <Text style={styles.secondText}>
+          Hire a hairstylist, barber, nail tech, {'\n'} makeup artist, and more!
+        </Text>
+        <ScrollView
+            horizontal={true}
+            showHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}> 
+            {filters.map(item => (
+                <FilterCards key={item.id}
+                      title={item.title}
+                      url={item.url}
+                />              
+            ))}
+            </ScrollView>
         <StandardCard></StandardCard>
         <StandardCard></StandardCard>
-
+        <StandardCard></StandardCard>
+        <StandardCard></StandardCard>
+        <StandardCard></StandardCard>
+        <StandardCard></StandardCard>
       </ScrollView>
     );
   };
@@ -28,30 +46,21 @@ export default function Booked() {
       padding: 20,
   },
   firstText: {
-    color: "#F5F5F5",
+    color: "black",
     fontFamily: "Lexend",
     fontWeight: 800,
     fontSize: 30,
     textAlign: 'center',
     marginTop: 80,
-    marginBottom: 50,
+    marginBottom: 10,
 },
     secondText: {
-        color: "#52796F",
-        fontFamily: "Lehend",
-        fontWeight: 700,
-        fontSize: 24,
-        paddingLeft: 20,
-        textAlign: 'left',
-        marginTop: 10,
-        marginBottom: 10,
+      color: "black",
+      fontFamily: "Lexend",
+      fontWeight: 400,
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 0,
+      marginBottom: 5,
     },
-    thirdText: {
-        color: "black",
-        fontFamily: "Lehend",
-        fontWeight: 200,
-        fontSize: 16,
-        textAlign: 'center',
-        marginBottom: 60,
-    }
   });

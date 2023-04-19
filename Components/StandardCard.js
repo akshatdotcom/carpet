@@ -54,7 +54,7 @@ const deviceWidth = Math.round(Dimensions.get('window').width);
 const styles = StyleSheet.create({
     cardContainer: { 
         backgroundColor: '#737373',
-        height: 200,
+        height: 180,
         borderRadius: 20,
         shadowColor: '#000',
         shadowOffset: {
