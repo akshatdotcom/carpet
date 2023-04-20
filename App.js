@@ -21,10 +21,6 @@ import Main from './Components/Main';
 
 export default function App() {
   return (
-  // <SafeAreaProvider>
-  //   <SplashScreen/>
-  //  </SafeAreaProvider>
-
   // <Setup></Setup>
 
   // <SafeAreaProvider style={styles.container}>
@@ -39,19 +35,13 @@ export default function App() {
       
 //  <BookingsOrders></BookingsOrders>
 
-<Main></Main>
+// <Main></Main>
 
-//  <BookingSelection></BookingSelection>
+ <BookingSelection></BookingSelection>
 
   // <SafeAreaProvider style={styles.container}>
   //   <BookingsOrders></BookingsOrders>
   // </SafeAreaProvider>
-
-  ///// Variables //////
-  // <BookingCard></BookingCard>
-  // <NavigationBar></NavigationBar>
-/// <SearchPage></SearchPage>
-// <TestFlexbox></TestFlexbox>
     );
 }
 
