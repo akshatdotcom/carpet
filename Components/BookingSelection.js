@@ -46,7 +46,7 @@ export default function Booked() {
       padding: 20,
   },
   firstText: {
-    color: "black",
+    color: "white",
     fontFamily: "Lexend",
     fontWeight: 800,
     fontSize: 30,
@@ -55,7 +55,7 @@ export default function Booked() {
     marginBottom: 10,
 },
     secondText: {
-      color: "black",
+      color: "white",
       fontFamily: "Lexend",
       fontWeight: 400,
       fontSize: 18,
