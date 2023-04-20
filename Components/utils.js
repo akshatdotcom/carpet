@@ -93,3 +93,54 @@ export const bookings = [
         image: require('../assets/Videographer.png'),
     },
 ];
+
+export const filters = [
+    {
+        id: 1,
+        title: 'Filter',
+        name: 'filter',
+        url: 'filter-outline'
+    },
+    {
+        id: 2,
+        title: 'Haircut',
+        name: 'haircut',
+        url: 'haircut-outline'
+    },
+    {
+        id: 3,
+        title: 'Nails',
+        name: 'Nails',
+        url: 'nail-outline'
+    },
+    {
+        id: 4,
+        title: 'Makeup',
+        name: 'makeup',
+        url: 'makeup-outline'
+    },
+    {
+        id: 5,
+        title: 'Beard',
+        name: 'beard',
+        url: 'beard-outline'
+    },
+    {
+        id: 6,
+        title: 'Eyebrows',
+        name: 'eyebrows',
+        url: 'eyebrows-outline'
+    },
+    {
+        id: 7,
+        title: 'Eyelashes',
+        name: 'eyelashes',
+        url: 'eyelashes-outline'
+    },
+    {
+        id: 8,
+        title: 'Hairstylist',
+        name: 'hairstylist',
+        url: 'hairstylist-outline'
+    },
+];

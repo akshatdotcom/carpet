@@ -21,35 +21,30 @@ import Main from './Components/Main';
 
 export default function App() {
   return (
-  // <SafeAreaProvider>
-  //   <SplashScreen/>
-  //  </SafeAreaProvider>
-
   // <Setup></Setup>
 
-  <SafeAreaProvider style={styles.container}>
-     <BookingsOrders></BookingsOrders>
-  </SafeAreaProvider>
+  // <SafeAreaProvider style={styles.container}>
+  //    <BookingsOrders></BookingsOrders>
+  // </SafeAreaProvider>
 
   // <SafeAreaProvider style={styles.container}>
-  //   <VerificationDone></VerificationDone>
+    // <VerificationDone></VerificationDone>
   // </SafeAreaProvider>
 
 // //  <Preferences></Preferences>
       
 //  <BookingsOrders></BookingsOrders>
 
+ <SafeAreaProvider style={styles.container}>
+       <Main></Main>
+ </SafeAreaProvider>
+
+
 //  <BookingSelection></BookingSelection>
 
   // <SafeAreaProvider style={styles.container}>
   //   <BookingsOrders></BookingsOrders>
   // </SafeAreaProvider>
-
-  ///// Variables //////
-  // <BookingCard></BookingCard>
-  // <NavigationBar></NavigationBar>
-/// <SearchPage></SearchPage>
-// <TestFlexbox></TestFlexbox>
     );
 }
 

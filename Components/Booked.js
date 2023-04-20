@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, Image} from 'react-native';
 
 const BGColor = "#74AB9D"
 

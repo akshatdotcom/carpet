@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-export const Card = ({id, title, url}) => {
+export const FilterCards = ({id, title, url}) => {
     const [isSelected, setIsSelected] = useState(false);
     return (
       <TouchableOpacity
@@ -16,9 +16,7 @@ export const Card = ({id, title, url}) => {
           setIsSelected(!isSelected);
         }}>
         <View style={styles.cardInside}>
-          <Text id={id} style={styles.cardText}>{title} {'\n'} </Text>
-          <View style={styles.horizontalBar}/>
-          <Ionicon name={url} style={styles.image} size={48}></Ionicon>
+          <Text id={id} style={styles.cardText}> {title} </Text>
         </View>
       </TouchableOpacity>
     );
@@ -26,34 +24,23 @@ export const Card = ({id, title, url}) => {
 
 const styles = StyleSheet.create({
     cardElement: {
-        marginLeft: 20,
-        marginBottom: 20,
-        marginTop: 13,
+        marginLeft: 6,
+        marginBottom: 10,
+        marginTop: 10,
         borderRadius: 20,
-        height: 130,
-        width: 130,
-        flex: 0,
+        height: 25,
+        width: 88,
+        flex: 1,
         alignItems: 'center',
     },
     cardInside: {
         height: 130,
         width: 130,
         alignItems: 'center',
-        marginBottom:5
     },
     cardText: {
-        fontSize: 18,
-        textAlign: 'center',
-        fontWeight: 600,
-        marginTop: 18
+        marginTop: 3,
+        fontSize: 17,
+        fontWeight: 400,
     },
-    image: {
-        marginTop: 13,
-    },
-    horizontalBar: {
-        backgroundColor: 'black',
-        height: 1.5,
-        width: 100,
-        marginTop:-18
-  },
  });
