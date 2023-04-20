@@ -35,9 +35,12 @@ export default function App() {
       
 //  <BookingsOrders></BookingsOrders>
 
-// <Main></Main>
+ <SafeAreaProvider style={styles.container}>
+       <Main></Main>
+ </SafeAreaProvider>
 
- <BookingSelection></BookingSelection>
+
+//  <BookingSelection></BookingSelection>
 
   // <SafeAreaProvider style={styles.container}>
   //   <BookingsOrders></BookingsOrders>

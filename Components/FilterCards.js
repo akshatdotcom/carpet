@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         borderRadius: 20,
         height: 25,
-        width: 80,
+        width: 88,
         flex: 1,
         alignItems: 'center',
     },

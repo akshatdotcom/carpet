@@ -51,7 +51,7 @@ export default function Booked() {
     fontWeight: 800,
     fontSize: 30,
     textAlign: 'center',
-    marginTop: 70,
+    marginTop: 75,
     marginBottom: 10,
 },
     secondText: {
@@ -61,6 +61,6 @@ export default function Booked() {
       fontSize: 18,
       textAlign: 'center',
       marginTop: 0,
-      marginBottom: 5,
+      marginBottom: 10,
     },
   });

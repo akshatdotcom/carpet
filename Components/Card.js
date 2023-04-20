@@ -16,8 +16,9 @@ export const Card = ({id, title, url}) => {
           setIsSelected(!isSelected);
         }}>
         <View style={styles.cardInside}>
-          <Ionicon name={url} style={styles.image} size={30}></Ionicon>
           <Text id={id} style={styles.cardText}>{title} {'\n'} </Text>
+          <View style={styles.horizontalBar}/>
+          <Ionicon name={url} style={styles.image} size={48}></Ionicon>
         </View>
       </TouchableOpacity>
     );
@@ -38,15 +39,21 @@ const styles = StyleSheet.create({
         height: 130,
         width: 130,
         alignItems: 'center',
+        marginBottom:5
     },
     cardText: {
-        padding: 8,
-        fontSize: 20,
+        fontSize: 18,
         textAlign: 'center',
-        fontWeight: 400,
+        fontWeight: 600,
+        marginTop: 18
     },
     image: {
-        marginTop: 25,
-        marginBottom: 2,
+        marginTop: 13,
     },
+    horizontalBar: {
+        backgroundColor: 'black',
+        height: 1.5,
+        width: 100,
+        marginTop:-18
+  },
  });

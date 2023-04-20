@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
         elevation: 9,
     },
     image: {
-        // marginTop: 20,
-        marginLeft: 17,
+        marginBottom:16,
+        marginLeft: 15,
     },
     bodyText: {
         marginLeft: 220,

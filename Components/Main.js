@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {StyleSheet, ScrollView, View, Text, Button, TouchableOpacity} from 'react-native';
 import { services } from './utils.js';
 import { Card } from './Card.js';
-import BookingCard  from './BookingCard.js';
+import StandardCard  from './StandardCard.js';
 
 const BGColor = "#74AB9D"
 
@@ -15,7 +15,7 @@ export default function Main() {
             <ScrollView 
             horizontal={true}
             showHorizontalScrollIndicator={false}
-            showsVerticalScrollIndicator={false}> 
+            showsVerticalScrollIndicator={false} style={{marginBottom:-27}}> 
             {services.map(item => (
                 <Card key={item.id}
                       title={item.title}
@@ -27,11 +27,14 @@ export default function Main() {
             style={styles.horizontalBar}
             />
             <Text style={styles.text}>
-                Based off your interests
+                Based on Your Interests
             </Text>
             <ScrollView 
             horizontal={true}> 
-            <BookingCard></BookingCard>
+            <StandardCard></StandardCard>
+            <StandardCard></StandardCard>
+            <StandardCard></StandardCard>
+            <StandardCard></StandardCard>
             </ScrollView>
             <View
             style={styles.horizontalBar}
@@ -41,7 +44,7 @@ export default function Main() {
             </Text>
             <ScrollView horizontal={true}> 
                 {services.map(item => (
-                    item.id < 3 ? (
+                    item.id < 4 ? (
                     <Card key={item.id}
                           title={item.title}
                           url={item.url}
@@ -50,34 +53,36 @@ export default function Main() {
                 ))}
             </ScrollView>
             <View
-            style={styles.horizontalBar}
-            />
+            style={styles.horizontalBar}/>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
+    container: {
+        padding: 20
+    },
     firstText: {
         color: "#F5F5F5",
         fontFamily: "Lexend",
         fontWeight: 600,
-        fontSize: 30,
+        fontSize: 28,
         marginLeft: 20,
-        marginTop: 50,
+        marginTop: 70,
         marginBottom: 15,
     },
     text: {
         color: "#F5F5F5",
         fontFamily: "Lexend",
         fontWeight: 600,
-        fontSize: 25,
+        fontSize: 27,
         marginLeft: 20,
         marginTop: 10,
-        marginBottom: 15,
+        marginBottom: 20,
     },
     horizontalBar: {
         borderBottomColor: 'black',
-        borderBottomWidth: 0.5,
+        borderBottomWidth: 1,
         margin: 10,
     },
  });
