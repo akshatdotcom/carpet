@@ -22,7 +22,7 @@ export default function Booked() {
               item.service === 'Photography' ? <BookingCard 
                     id={item.id}
                     name={item.name}
-                    service={item.service}
+                    // service={item.service}
                     jobDescription={item.jobDescription}
                     date={item.date}
                     time={item.time}
@@ -41,7 +41,7 @@ export default function Booked() {
               item.service === 'Cosmetics' ? <BookingCard 
                     id={item.id}
                     name={item.name}
-                    service={item.service}
+                    // service={item.service}
                     jobDescription={item.jobDescription}
                     date={item.date}
                     time={item.time}
@@ -61,7 +61,7 @@ export default function Booked() {
               item.service === 'Videography' ? <BookingCard 
                     id={item.id}
                     name={item.name}
-                    service={item.service}
+                    // service={item.service}
                     jobDescription={item.jobDescription}
                     date={item.date}
                     time={item.time}

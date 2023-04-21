@@ -83,7 +83,7 @@ export const bookings = [
         image: require('../assets/Cosmetologist.png'),
     },
     {
-        id: 2,
+        id: 3,
         name: 'Jill Ross',
         service: 'Videography',
         jobDescription: 'Job Description: Social Media Ads',
@@ -91,6 +91,17 @@ export const bookings = [
         time: '5PM - 7PM',
         location: '2804 Elkins Blvd, Sugar Land, TX 77479',
         image: require('../assets/Videographer.png'),
+    },
+
+    {
+        id: 4,
+        name: 'Jill Ross',
+        service: 'Nails (Cosmetics)',
+        jobDescription: 'Job Description: Gel Polish, Acrylics',
+        date: '4/28/23',
+        time: '6PM - 7PM',
+        location: '2804 Elkins Blvd, Sugar Land, TX 77479',
+        image: require('../assets/Cosmetologist.png'),
     },
 ];
 

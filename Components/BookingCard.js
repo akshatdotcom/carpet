@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         color: "#fff",
     },
     bodyText: {
-        marginTop: -130,
+        marginTop: -140,
         marginLeft: 80,
         fontWeight: '700',
         color: "#fff",
