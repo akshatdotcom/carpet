@@ -4,10 +4,16 @@ import { services } from './utils.js';
 import { Card } from './Card.js';
 import StandardCard  from './StandardCard.js';
 
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
+
+
 const BGColor = "#74AB9D"
 
 export default function Main() {
+    const navigation  = useNavigation();
     return (
+    <SafeAreaProvider style = {styles.safeContainer}>
         <View style={{backgroundColor: BGColor}}>
             <Text style={styles.firstText}>
                 Popular Services
@@ -39,7 +45,9 @@ export default function Main() {
             <View
             style={styles.horizontalBar}
             />
-            <Text style={styles.text}>
+            <Text 
+                onPress={() => navigation.navigate("BookingSelection")}
+                style={styles.text}>
                 Recently Viewed Services
             </Text>
             <ScrollView horizontal={true}> 
@@ -55,10 +63,17 @@ export default function Main() {
             <View
             style={styles.horizontalBar}/>
         </View>
+    </SafeAreaProvider>
     );
 }
 
 const styles = StyleSheet.create({
+    safeContainer: {
+        flex: 1,
+        backgroundColor: '#74AB9D',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     container: {
         padding: 20
     },

@@ -15,11 +15,12 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button: {
-        backgroundColor: '#134840',
+        backgroundColor: '#52796F',
         borderRadius: 20,
         padding: 10,
         margin: 15,
-        minWidth: 50
+        height: 50,
+        minWidth: 150
     },
     buttonText: {
         textAlign: 'center',        

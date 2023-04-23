@@ -1,6 +1,9 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-native';
 import GenericButton from './GenericButton';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
+
 
 const AppButton = ({ onPress, title }) => (
   <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
@@ -11,26 +14,38 @@ const AppButton = ({ onPress, title }) => (
 const BGColor = "#74AB9D";
 
 export default function VerificationDone() {
+    const navigation  = useNavigation();
     return (
-      <View style={styles.container}>
-        <Text style={styles.firstText}>
-            Your student status has {'\n'}
-            been successfully {'\n'}
-            verified!
-        </Text>
-        <Image style={styles.image}
-               source={require('../assets/Clipboard.png')} 
-        />
-         <Text style={styles.secondText}>
-            Your account is ready! {'\n'}
-            Now for a few questions...
-        </Text>
-        <GenericButton text={ "Continue" }></GenericButton>
-      </View>
+      <SafeAreaProvider style = {styles.safeContainer}>
+        <View style={styles.container}>
+          <Text style={styles.firstText}>
+              Your student status has {'\n'}
+              been successfully {'\n'}
+              verified!
+          </Text>
+          <Image style={styles.image}
+                 source={require('../assets/Clipboard.png')} 
+          />
+           <Text style={styles.secondText}>
+              Your account is ready! {'\n'}
+              Now for a few questions...
+          </Text>
+          <GenericButton 
+            text={ "Continue" }
+            onPress={() => navigation.navigate("VerificationDone")}
+          />
+        </View>
+      </SafeAreaProvider>
     );
   };
 
   const styles = StyleSheet.create({
+    safeContainer: {
+      flex: 1,
+      backgroundColor: '#74AB9D',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     container: {
         flex: 0.9,
         flexDirection: 'column',
@@ -51,8 +66,8 @@ export default function VerificationDone() {
     secondText: {
         color: "white",
         fontFamily: "Lehend",
-        fontWeight: 300,
-        fontSize: 16,
+        fontWeight: 500,
+        fontSize: 26,
         textAlign: 'center',
         marginBottom: 60,
     },

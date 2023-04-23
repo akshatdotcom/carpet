@@ -10,12 +10,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 // Post's....
 import Post1 from '../assets/post1.jpeg';
 import Post2 from '../assets/post2.jpeg';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function Home() {
 
     const edges = useSafeAreaInsets();
-
+    const navigation  = useNavigation();
     return (
         <View style={styles.container}>
           
@@ -24,13 +25,16 @@ export default function Home() {
                 Welcome
             </Text>
 
-            <Text style = {styles.subText}>to
-                 the campus marketplace!
+            <Text style = {styles.subText}>
+                 to the campus marketplace!
             </Text>
          </View>
 
             
-            <TouchableOpacity style = {styles.button}>
+            <TouchableOpacity 
+                style = {styles.button}
+                onPress={() => navigation.navigate("Main")}
+            >
                 <Text style = {styles.buttonText}>
                     Let's get started
                 </Text>
@@ -60,12 +64,10 @@ const styles = StyleSheet.create({
         fontSize: 34,          
     },
     subText: {
-        width: 365, 
-        height: 40,
-        left: 70,
-        top: -255,
+        textAlign: 'center',
+        marginTop: -255,
         fontWeight: 'bold' ,
-        fontSize: 18,
+        fontSize: 22,
         color: '#74AB9D',
         
     },

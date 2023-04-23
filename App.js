@@ -3,6 +3,9 @@ import React from 'react';
 // import {StatusBar} from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 import SplashScreen from './Components/SplashScreen';
 import Login from './Components/Login';
@@ -19,6 +22,10 @@ import BookingSelection from './Components/BookingSelection';
 import TestFlexbox from './Components/TestFlexbox';
 import Main from './Components/Main';
 
+
+const Stack = createNativeStackNavigator();
+
+
 export default function App() {
   return (
   // <Setup></Setup>
@@ -27,18 +34,39 @@ export default function App() {
   //    <BookingsOrders></BookingsOrders>
   // </SafeAreaProvider>
 
-  // <SafeAreaProvider style={styles.container}>
-    // <VerificationDone></VerificationDone>
-  // </SafeAreaProvider>
+  // // <SafeAreaProvider style={styles.container}>
+  //   <VerificationDone></VerificationDone>
+  // // </SafeAreaProvider>
 
 // //  <Preferences></Preferences>
       
 //  <BookingsOrders></BookingsOrders>
 
- <SafeAreaProvider style={styles.container}>
-       <Main></Main>
- </SafeAreaProvider>
+ <NavigationContainer style = {styles.container}>
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
+    <Stack.Screen
+      name="SplashScreen"
+      component={SplashScreen}
+    />
+    <Stack.Screen
+      name="Main"
+      component={Main}
+    />
 
+    <Stack.Screen
+      name="BookingSelection"
+      component={BookingSelection}
+    />
+  </Stack.Navigator>
+ </NavigationContainer> 
+
+//  <SafeAreaProvider style={styles.container}>
+//   <SplashScreen></SplashScreen>
+//  </SafeAreaProvider> */
 
 //  <BookingSelection></BookingSelection>
 
