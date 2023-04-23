@@ -116,6 +116,13 @@ export default function Booked() {
           color={isChecked5 ? '#52796F' : undefined}
          />
 
+         // TODO (Akshat):
+            // Add a button to go to the next screen
+            // Convert the above code into Components
+                // Increase spacing between checkbox lines
+                // Add functionality for optional checkbox sections (e.g. nail accessories)
+            // Add manicure, pedicure, nail art, nail treatment options
+
           {/* <Text style={styles.secondText}>
              Details For Your Upcoming Booking
           </Text>
