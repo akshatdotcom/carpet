@@ -1,11 +1,17 @@
 // Coded by Rudy Lea
 
 import React from "react";
-import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, Touchable} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 // const [isSelected, setIsSelected] = useState(false);
 const StandardCard = ({id, name, service, jobDescription, date, time, location, image, stars, reviews, cost}) => {
+    const navigation = useNavigation();
     return (
+        <TouchableOpacity
+            onPress={() => { navigation.navigate("ChoosingService")}} 
+        >
         <View style={styles.cardContainer}>
             <View style={{flex:1, justifyContent: 'center'}}>
                 <Image style={styles.image} source={image} />
@@ -56,6 +62,7 @@ const StandardCard = ({id, name, service, jobDescription, date, time, location, 
                </View> 
             </View>
         </View>
+        </TouchableOpacity>
     );
 };
 

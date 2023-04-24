@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Image, StyleSheet, ScrollView, Text, View, Dimensions, FlatList } from 'react-native';
 import Checkbox from 'expo-checkbox';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 
@@ -14,6 +15,8 @@ export default function Booked() {
     const [isChecked4, setChecked4] = useState(false);
     const [isChecked5, setChecked5] = useState(false);
     return (
+    <SafeAreaProvider style = {styles.safeContainer}>
+
       <View style={styles.container}>
         <ScrollView style={styles.scroll}>
         
@@ -24,7 +27,7 @@ export default function Booked() {
                 
                 <Image style={styles.imageStyle} source={require('../assets/Cosmetologist.png')} />
                 <Text style={styles.name}>
-                    Jane Doe
+                    John Doe
                 </Text>
                 <Image style={{marginLeft:20,marginTop:5,height:17,width:17}} source={require('../assets/Star.png')} />
                       <Text style={{color:'#FFD700', fontSize:15, marginTop:-16, marginLeft:40,fontWeight:600}}>
@@ -116,105 +119,29 @@ export default function Booked() {
           color={isChecked5 ? '#52796F' : undefined}
          />
 
-         // TODO (Akshat):
+         {/* // TODO (Akshat):
             // Add a button to go to the next screen
             // Convert the above code into Components
                 // Increase spacing between checkbox lines
                 // Add functionality for optional checkbox sections (e.g. nail accessories)
-            // Add manicure, pedicure, nail art, nail treatment options
+            // Add manicure, pedicure, nail art, nail treatment options */}
 
-          {/* <Text style={styles.secondText}>
-             Details For Your Upcoming Booking
-          </Text>
-          <View>
-            
-          </View>
-
-         
-
-
-     
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:16, marginRight:3}}>
-                Paid 4/26/23 - Venmo     
-          </Text>
-
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:16, marginRight:10}}>
-              _______________________________________
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:20, marginRight:3}}>
-                Gel Polish Removal
-          </Text>
-
-          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $20.00
-          </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                Acrylic Nails
-          </Text>
-
-          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $50.00
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                French Tip
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $15.00
-          </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                Nail Accessories
-          </Text>
-
-              <Text style={{paddingLeft: 40, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                    - Rhineseontes ($2 each)
-              </Text>
-
-              <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                        $10.00
-              </Text>
-
-              <Text style={{paddingLeft: 40, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                    - Custom Add-Ons ($5 each)
-              </Text>
-
-              <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                        $15.00
-              </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:18, marginTop:25, marginRight:3}}>
-              Total Before Tax
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $110.00
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:20, marginTop:15, marginRight:3}}>
-              Total (8.25% Tax)
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $119.07
-          </Text> */}
+       
 
 
         </ScrollView>
       </View>
+    </SafeAreaProvider>
     );
   };
 
   const styles = StyleSheet.create({
+    safeContainer: {
+        flex: 1,
+        backgroundColor: '#74AB9D',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     container: {
         flex: 1,
         position: 'relative',

@@ -20,11 +20,10 @@ import BookingsOrders from './Components/BookingsOrders';
 import BookingCard from './Components/BookingCard';
 import BookingSelection from './Components/BookingSelection';
 import TestFlexbox from './Components/TestFlexbox';
-import ChoosingServices from './Components/ChoosingService';
+import ChoosingService from './Components/ChoosingService';
 import Main from './Components/Main';
 import Tabs from './Components/Tabs';
 import BookingDetails from './Components/BookingDetails';
-
 
 const Stack = createNativeStackNavigator();
 
@@ -81,6 +80,10 @@ export default function App() {
       component={BookingDetails}
     />
 
+    <Stack.Screen
+      name="ChoosingService"
+      component={ChoosingService}
+    />
 
     
   </Stack.Navigator>

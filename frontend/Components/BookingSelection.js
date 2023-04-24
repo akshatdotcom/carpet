@@ -4,11 +4,14 @@ import { filters } from './utils.js';
 import { FilterCards } from './FilterCards.js';
 import StandardCard from './StandardCard';
 import { bookings } from './utils';
+import { useNavigation } from '@react-navigation/native';
 
 
 const BGColor = "#74AB9D"
 
 export default function Booked() {
+    const navigation  = useNavigation();
+
     return (
       <ScrollView style={{backgroundColor: BGColor}}>
 
@@ -30,7 +33,7 @@ export default function Booked() {
             ))}
         </ScrollView>
         {bookings.map(item => (
-              <StandardCard 
+              <StandardCard
                     id={item.id}
                     name={item.name}
                     // service={item.service}
