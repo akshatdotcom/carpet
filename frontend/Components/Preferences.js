@@ -33,7 +33,7 @@ export default function Preferences() {
                 // onPress={() => navigation.navigate("Main")}
                 onPress={() => navigation.navigate("Tabs")}
             >
-              <Text style={styles.appButtonText}>{'Done'}</Text>
+              <Text style={styles.appButtonText}>{'Complete'}</Text>
             </TouchableOpacity>
 
         </ScrollView>
@@ -70,17 +70,17 @@ const styles = StyleSheet.create({
     },
     appButtonContainer: {
         elevation: 8,
-        backgroundColor: "#14453D",
-        borderRadius: 10,
-        paddingVertical: 10,
-        paddingHorizontal: 12,
+        backgroundColor: "#52796F",
+        borderRadius: 20,
+        padding: 10,
         marginBottom: 70,
-        marginTop: 40,
-        width: 250,
-        marginLeft: 70,
+        marginTop: 20,
+        margin: 5,
+        width: 170,
+        marginLeft: 105,
       },
       appButtonText: {
-        fontSize: 18,
+        fontSize: 25,
         color: "#fff",
         fontWeight: "bold",
         alignSelf: "center",

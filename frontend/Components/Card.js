@@ -9,7 +9,7 @@ export const Card = ({id, title, url}) => {
         activeOpacity={0.6}
         style={
           isSelected
-            ? [{backgroundColor: '#D8EDDA'}, styles.cardElement]
+            ? [{backgroundColor: '#52796F'}, styles.cardElement]
             : [{backgroundColor: '#BBD8D3'}, styles.cardElement]
         }
         onPress={() => {
