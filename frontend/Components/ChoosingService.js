@@ -36,8 +36,8 @@ export default function Booked() {
     }, [isChecked, isChecked2, isChecked3, isChecked4, isChecked5, cost]);
 
     return (
+    <SafeAreaProvider style = {styles.safeContainer}>
       <View style={styles.container}>
-        <ScrollView style={styles.scroll}>
         
           <Text style={styles.firstText}>
               Select Your Services
@@ -155,105 +155,18 @@ export default function Booked() {
                 color={isChecked5 ? '#52796F' : undefined}
             />
 
-         // TODO (Akshat):
-            // Add a button to go to the next screen
-            // Convert the above code into Components
-                // Increase spacing between checkbox lines
-                // Add functionality for optional checkbox sections (e.g. nail accessories)
-            // Add manicure, pedicure, nail art, nail treatment options
-
-          {/* <Text style={styles.secondText}>
-             Details For Your Upcoming Booking
-          </Text>
-          <View>
-            
-          </View>
-
-         
-
-
-     
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:16, marginRight:3}}>
-                Paid 4/26/23 - Venmo     
-          </Text>
-
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:16, marginRight:10}}>
-              _______________________________________
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:20, marginRight:3}}>
-                Gel Polish Removal
-          </Text>
-
-          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $20.00
-          </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                Acrylic Nails
-          </Text>
-
-          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $50.00
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                French Tip
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $15.00
-          </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                Nail Accessories
-          </Text>
-
-              <Text style={{paddingLeft: 40, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                    - Rhineseontes ($2 each)
-              </Text>
-
-              <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                        $10.00
-              </Text>
-
-              <Text style={{paddingLeft: 40, color:'white', fontWeight:400, fontSize:18, marginTop:5, marginRight:3}}>
-                    - Custom Add-Ons ($5 each)
-              </Text>
-
-              <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                        $15.00
-              </Text>
-
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:18, marginTop:25, marginRight:3}}>
-              Total Before Tax
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $110.00
-          </Text>
-
-          <Text style={{paddingLeft: 20, color:'white', fontWeight:600, fontSize:20, marginTop:15, marginRight:3}}>
-              Total (8.25% Tax)
-          </Text>
-
-          <Text style={{paddingRight: 23, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $119.07
-          </Text> */}
-
-
-        </ScrollView>
+            <StripeProvider publishableKey="sk_test_51N0C0vLe6Fu39Z78J6n5N6WPf1F5vdjQ5gQtcXW4GPyj6HTBOITfthap0vRaocRLSifsX9aDOKp2nglu8KQaZUsZ00rJzTiyCO">   
+                <Payment cost={cost} />
+            </StripeProvider>
       </View>
+    </SafeAreaProvider>
     );
   };
 
   const styles = StyleSheet.create({
+    safeContainer: {
+        backgroundColor: '#74AB9D',
+    },
     container: {
         backgroundColor: '#74AB9D',
     },
