@@ -92,7 +92,7 @@ export default function Booked() {
 
     firstText: {
         color: "#FFFFFF",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         textAlign: 'left',
         fontWeight: 600,
         paddingLeft: 20,
@@ -102,7 +102,7 @@ export default function Booked() {
     },
     secondText: {
         color: "#52796F",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 700,
         fontSize: 24,
         paddingLeft: 20,
@@ -112,7 +112,7 @@ export default function Booked() {
     },
     thirdText: {
         color: "black",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 200,
         fontSize: 16,
         textAlign: 'center',

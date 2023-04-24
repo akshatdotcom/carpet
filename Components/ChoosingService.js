@@ -9,6 +9,10 @@ const BGColor = "#74AB9D"
 
 export default function Booked() {
     const [isChecked, setChecked] = useState(false);
+    const [isChecked2, setChecked2] = useState(false);
+    const [isChecked3, setChecked3] = useState(false);
+    const [isChecked4, setChecked4] = useState(false);
+    const [isChecked5, setChecked5] = useState(false);
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scroll}>
@@ -43,11 +47,11 @@ export default function Booked() {
 
          
          <Text style={{paddingLeft: 50, color:'white', fontWeight:600, fontSize:18, marginTop: -5, marginRight:3}}>
-                Full Shave      
+                Gel Polish Removal
          </Text>
 
          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $25.00
+                    $20.00
          </Text>
          <Checkbox
           style={styles.checkbox}
@@ -57,18 +61,67 @@ export default function Booked() {
          />
 
         <Text style={{paddingLeft: 50, color:'white', fontWeight:600, fontSize:18, marginTop: 5, marginRight:3}}>
-               Haircut (Above Shoulders)     
+               Acrylic Nails
          </Text>
 
          <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
-                    $35.99
+                    $50.00
          </Text>
          <Checkbox
           style={styles.checkbox}
-          value={isChecked}
-          onValueChange={setChecked}
-          color={isChecked ? '#52796F' : undefined}
+          value={isChecked2}
+          onValueChange={setChecked2}
+          color={isChecked2 ? '#52796F' : undefined}
          />
+
+        <Text style={{paddingLeft: 50, color:'white', fontWeight:600, fontSize:18, marginTop: 5, marginRight:3}}>
+               French Tip
+         </Text>
+
+         <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
+                    $15.00
+         </Text>
+         <Checkbox
+          style={styles.checkbox}
+          value={isChecked3}
+          onValueChange={setChecked3}
+          color={isChecked3 ? '#52796F' : undefined}
+         />
+
+        <Text style={{paddingLeft: 50, color:'white', fontWeight:600, fontSize:18, marginTop: 5, marginRight:3}}>
+               Rhinestones
+         </Text>
+
+         <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
+                    $10.00
+         </Text>
+         <Checkbox
+          style={styles.checkbox}
+          value={isChecked4}
+          onValueChange={setChecked4}
+          color={isChecked4 ? '#52796F' : undefined}
+         />
+
+        <Text style={{paddingLeft: 50, color:'white', fontWeight:600, fontSize:18, marginTop: 5, marginRight:3}}>
+               Custom Add-Ons
+         </Text>
+
+         <Text style={{paddingRight: 20, textAlign: 'right', color:'white',fontWeight:600,fontSize:18,marginTop:-18.5}}>
+                    $15.00
+         </Text>
+         <Checkbox
+          style={styles.checkbox}
+          value={isChecked5}
+          onValueChange={setChecked5}
+          color={isChecked5 ? '#52796F' : undefined}
+         />
+
+         // TODO (Akshat):
+            // Add a button to go to the next screen
+            // Convert the above code into Components
+                // Increase spacing between checkbox lines
+                // Add functionality for optional checkbox sections (e.g. nail accessories)
+            // Add manicure, pedicure, nail art, nail treatment options
 
           {/* <Text style={styles.secondText}>
              Details For Your Upcoming Booking
@@ -176,7 +229,7 @@ export default function Booked() {
 
     firstText: {
         color: "#FFFFFF",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         textAlign: 'left',
         fontWeight: 600,
         paddingLeft: 20,
@@ -186,7 +239,7 @@ export default function Booked() {
     },
     secondText: {
         color: "#52796F",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 700,
         fontSize: 21,
         paddingLeft: 20,
@@ -196,7 +249,7 @@ export default function Booked() {
     },
     thirdText: {
         color: "white",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 700,
         fontSize: 24,
         paddingLeft: 20,

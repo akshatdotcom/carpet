@@ -56,7 +56,7 @@ export default function VerificationDone() {
     },
     firstText: {
         color: "white",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 600,
         fontSize: 30,
         textAlign: 'center',
@@ -65,7 +65,7 @@ export default function VerificationDone() {
     },
     secondText: {
         color: "white",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 500,
         fontSize: 26,
         textAlign: 'center',

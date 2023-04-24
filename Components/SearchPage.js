@@ -62,7 +62,7 @@ export default function SearchPage() {
     },
     firstText: {
         color: "#134840",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 600,
         fontSize: 30,
         textAlign: 'center',
@@ -70,7 +70,7 @@ export default function SearchPage() {
     },
     secondText: {
         color: "black",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 200,
         fontSize: 16,
         textAlign: 'center',
@@ -78,7 +78,7 @@ export default function SearchPage() {
     },
     thirdText: {
         color: "black",
-        fontFamily: "Lehend",
+        fontFamily: "Lexend",
         fontWeight: 200,
         fontSize: 16,
         textAlign: 'center',
