@@ -168,3 +168,21 @@ export const filters = [
         url: 'hairstylist-outline'
     },
 ];
+
+export const typesServices = [
+    {type: 'Gel Polish Removal',
+     price: 20
+    },
+    {type: 'Acrylic Nails',
+     price: 50
+    },
+    {type: 'French Tip',
+     price: 15
+    },
+    {type: 'Rhinestones',
+     price: 10
+    },
+    {type: 'Custom Add-Ons',
+     price: 15
+    },
+];

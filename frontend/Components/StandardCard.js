@@ -48,12 +48,12 @@ const StandardCard = ({id, name, service, jobDescription, date, time, location, 
                   </View>
                </View> 
                <View style={{flex:2}}>
-                   <Text style={{color:'white', fontSize:16, marginTop:18, marginLeft:8, marginRight: 20, fontWeight:550}}>
+                   <Text style={{color:'white', fontSize:16, marginTop:18, marginLeft:8, marginRight: 20, fontWeight:500}}>
                         {jobDescription}
                    </Text>
                </View> 
                <View style={{flex:2, flexDirection:'row',justifyContent:'center',marginLeft:110}}>
-                    <Text style={{color:'white',fontWeight:550,font:15,marginTop:20,marginRight:3}}>
+                    <Text style={{color:'white',fontWeight:500,font:15,marginTop:20,marginRight:3}}>
                         STARTING AT
                     </Text>
                     <Text style={{color:'white',fontWeight:700,fontSize:22,marginTop:13.5}}>
