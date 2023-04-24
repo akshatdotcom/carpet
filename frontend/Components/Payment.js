@@ -1,6 +1,10 @@
 import { useStripe } from "@stripe/stripe-react-native";
 import React from "react";
 import { View, Text, Button, TouchableOpacity, StyleSheet} from "react-native";
+import Constants from "expo-constants";
+
+const { manifest } = Constants;
+const uri = `http://${manifest.debuggerHost.split(':').shift()}:8080`;
 
 export default Payment = ({cost}) => {
     const stripe = useStripe();
@@ -8,6 +12,7 @@ export default Payment = ({cost}) => {
     const subscribe = async () => {
         try {
           // sending request
+          console.log(`${uri}/pay`);
           const response = await fetch("http://localhost:8080/pay", {
             method: "POST",
             body: JSON.stringify({name: "Dinesh Polisetty",

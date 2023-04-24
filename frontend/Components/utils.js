@@ -62,6 +62,19 @@ export const services = [
     }
 ];
 
+export const searchPageOptions = [
+    { name: 'Arts and Crafts', url: 'easel-outline', desc: 'Knitting, Canvas Work, Crocheting ' },
+    { name: 'Coding', url: 'code-slash-outline', desc: 'Web Development, Front-end, Back-end' },
+    { name: 'Cosmetic', url: 'cut-outline', desc: 'Haircuts, Nails, Eyelashes, Eyebrows' },
+    { name: 'Digital Design', url: 'brush-outline', desc: 'Logo Dseign, Digital Art, Graphics, Tattoo Design' },
+    { name: 'Floral Design', url: 'rose-outline', desc: 'Bouquets, Reefs, Crowns, Decorations' },
+    { name: 'Music', url: 'musical-notes-outline', desc: 'Mixing, Producing, Vocals, Recording' },
+    { name: 'Photography', url: 'camera-outline', desc: 'Senior Portraits, Editing, Photoshop' },
+    { name: 'Videography', url: 'videocam-outline', desc: 'Short Films, Organization Promos' },
+    { name: 'Cleaning', url: 'color-fill-outline', desc: 'Deep Clean, UV Disinfection' },
+    { name: 'Carpentry', url: 'hammer-outline', desc: 'Flooring, Painting' },
+];
+
 export const bookings = [
     {
         id: 1,

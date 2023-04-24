@@ -49,6 +49,7 @@ export default function App() {
     screenOptions={{
       headerShown: false,
     }}
+    style={styles.navigator}
   >
     <Stack.Screen
       name="SplashScreen"
@@ -107,5 +108,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#74AB9D',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  navigator: {
+    backgroundColor: '#74AB9D',
   },
 });
