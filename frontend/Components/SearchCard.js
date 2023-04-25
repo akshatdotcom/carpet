@@ -6,16 +6,16 @@ export const SearchCard = ({title, url, desc}) => {
     return (
         <>
         <View style={styles.horizontalBar}/>
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Ionicon name={url} style={styles.icon} size={60}></Ionicon>
-            <View style={{flex: 2.4}}>
+            <View style={{flex: 2}}>
                 <Text style={styles.title}>{title}</Text>
                 <Text style={styles.desc} numberOfLines={2}>{desc}</Text>
             </View>
         </View>
         </>
     );
-  };
+ };
 
   const styles = StyleSheet.create({
     horizontalBar: {

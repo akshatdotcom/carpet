@@ -78,12 +78,11 @@ const styles = StyleSheet.create({
         margin: 5,
         width: 170,
         marginLeft: 105,
-      },
-      appButtonText: {
+    },
+    appButtonText: {
         fontSize: 25,
         color: "#fff",
         fontWeight: "bold",
         alignSelf: "center",
-        textTransform: "uppercase",
-      }
+    },
 });

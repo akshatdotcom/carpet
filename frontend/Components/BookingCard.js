@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     imageStyle: {
         alignSelf: 'left',
         marginTop: 60,
-    
+        borderRadius: 50,
     },
     name: {
         paddingTop: 5,

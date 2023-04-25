@@ -4,10 +4,14 @@ import { StyleSheet, ScrollView, Text, View, Dimensions, FlatList } from 'react-
 import BookingCard from './BookingCard';
 import { bookings } from './utils';
 
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+
 const BGColor = "#74AB9D"
 
 export default function Booked() {
     return (
+      <SafeAreaProvider style = {styles.safeContainer}>
       <View style={styles.container}>
         <ScrollView style={styles.scroll}>
         
@@ -74,6 +78,7 @@ export default function Booked() {
 
         </ScrollView>
       </View>
+      </SafeAreaProvider>
     );
   };
 
@@ -85,6 +90,9 @@ export default function Booked() {
         marginTop: 85,
         margin: 10,
     },
+    safeContainer: {
+      backgroundColor: '#74AB9D',
+    },
     scroll: {
         width: Math.round(Dimensions.get('window').width) - 10,
 
@@ -92,7 +100,6 @@ export default function Booked() {
 
     firstText: {
         color: "#FFFFFF",
-        fontFamily: "Lehend",
         textAlign: 'left',
         fontWeight: 600,
         paddingLeft: 20,
@@ -102,7 +109,6 @@ export default function Booked() {
     },
     secondText: {
         color: "#52796F",
-        fontFamily: "Lehend",
         fontWeight: 700,
         fontSize: 24,
         paddingLeft: 20,
@@ -112,7 +118,6 @@ export default function Booked() {
     },
     thirdText: {
         color: "black",
-        fontFamily: "Lehend",
         fontWeight: 200,
         fontSize: 16,
         textAlign: 'center',

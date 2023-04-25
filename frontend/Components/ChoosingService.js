@@ -1,9 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Image, StyleSheet, ScrollView, Text, View, Dimensions, FlatList, Button } from 'react-native';
+import { Image, StyleSheet, ScrollView, Text, View, Dimensions, TouchableOpacity, Button } from 'react-native';
 import Checkbox from 'expo-checkbox';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StripeProvider } from '@stripe/stripe-react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 import Payment from './Payment';
 import { typesServices } from './utils';
@@ -12,6 +14,8 @@ import { typesServices } from './utils';
 const BGColor = "#74AB9D"
 
 export default function Booked() {
+    const navigation  = useNavigation();
+
     const [isChecked, setChecked] = useState(false);
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);
@@ -44,7 +48,7 @@ export default function Booked() {
           </Text>
           <View>
                 
-                <Image style={styles.imageStyle} source={require('../assets/Cosmetologist.png')} />
+                <Image style={styles.imageStyle} source={require('../assets/NailTechModified.png')} />
                 <Text style={styles.name}>
                     Jane Doe
                 </Text>
@@ -95,7 +99,7 @@ export default function Booked() {
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
-                color={isChecked2 ? '#52796F' : undefined}
+                color={isChecked ? '#52796F' : undefined}
             />
             
 
@@ -158,6 +162,16 @@ export default function Booked() {
             <StripeProvider publishableKey="sk_test_51N0C0vLe6Fu39Z78J6n5N6WPf1F5vdjQ5gQtcXW4GPyj6HTBOITfthap0vRaocRLSifsX9aDOKp2nglu8KQaZUsZ00rJzTiyCO">   
                 <Payment cost={cost} />
             </StripeProvider>
+
+            <TouchableOpacity 
+                style={styles.appButtonContainer}
+                // onPress={() => navigation.navigate("Main")}
+                onPress={() => navigation.navigate("BookingDetails")}
+            >
+              <Text style={styles.appButtonText}>{'View Booking'}</Text>
+            </TouchableOpacity>
+
+
       </View>
     </SafeAreaProvider>
     );
@@ -226,5 +240,22 @@ export default function Booked() {
         borderRadius: 5,
         color: 'white',
         borderColor: '#52796F',
+    },
+    appButtonContainer: {
+        elevation: 8,
+        backgroundColor: "#52796F",
+        borderRadius: 20,
+        padding: 10,
+        marginBottom: 70,
+        marginTop: 160,
+        margin: 5,
+        width: 270,
+        marginLeft: 60,
+    },
+    appButtonText: {
+        fontSize: 25,
+        color: "#fff",
+        fontWeight: "bold",
+        alignSelf: "center",
     },
   });
