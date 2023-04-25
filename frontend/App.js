@@ -24,6 +24,13 @@ import ChoosingService from './Components/ChoosingService';
 import Main from './Components/Main';
 import Tabs from './Components/Tabs';
 import BookingDetails from './Components/BookingDetails';
+import Inbox from './Components/Inbox';
+
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
+
+
 
 const Stack = createNativeStackNavigator();
 

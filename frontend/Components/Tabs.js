@@ -8,6 +8,7 @@ import ChoosingService from './ChoosingService'
 import { StyleSheet } from 'react-native';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Inbox from './Inbox';
 
 const Tab = createBottomTabNavigator();
 
@@ -48,7 +49,7 @@ const Tabs = () =>  {
 
 
             <Tab.Screen 
-                name = "Chat" component={ChoosingService}
+                name = "Chat" component={Inbox}
                 options = {{
                     tabBarLabel: 'Chat',
                     tabBarLabelStyle: {fontWeight: 800},

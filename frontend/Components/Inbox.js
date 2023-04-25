@@ -8,11 +8,12 @@ export default function Inbox() {
     let photographerImage = require('../assets/Photographer.png');
     let videographerImage = require('../assets/Videographer.png');
 
+
     return (
         // Header stuff
         <SafeAreaProvider style={ mainStyles.safeContainer }>
             <ScrollView style={ styles.cardContainer }>
-                <Text>Inbox</Text>
+                <Text style={styles.firstText}>Inbox</Text>
                 <MessageCard
                     image={ cosmetologistImage }
                     name={ "James Barber" }
@@ -65,6 +66,15 @@ function MessageCard(props) {
 // Videographer.png
 
 const styles = StyleSheet.create({
+    firstText: {
+        color: "#FFFFFF",
+        textAlign: 'left',
+        fontWeight: 600,
+        paddingLeft: 20,
+        fontSize: 30,
+        margin: 0,
+        marginBottom: 10,
+    },
     messageIcon: {
         borderRadius: 50,
         width: 70,
@@ -74,11 +84,14 @@ const styles = StyleSheet.create({
     messageName: {
         marginTop: 25,
         marginLeft: 20,
-        fontWeight: 700
+        fontWeight: 700,
+        color: 'white',
     },
     messagePreview: {
         paddingHorizontal: 20,
-        paddingTop: 5
+        paddingTop: 5,
+        color: 'white',
+
     },
     card: {
         flexDirection: 'row'
